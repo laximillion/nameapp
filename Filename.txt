@@ -1,0 +1,114 @@
+COMSC-205 Data Structures
+
+Fall and Spring. Credits: 4
+
+This course builds on the basic programming concepts learned in COMSC-151, shifting the focus to the organization of data in order to improve efficiency and simplicity of programs. Topics include the study of abstract data types and data structures (such as linked lists, stacks, queues, and binary trees). This course is programming-intensive and introduces the Java programming language.
+
+Applies to requirement(s): Math Sciences
+Prereq: One of the following: COMSC-151 (with a grade of C or better) or COMSC-161 (with a grade of C or better). Coreq: COMSC-205L.
+Advisory: This course cannot be taken by students who have completed COMSC-201 or COMSC-211.
+
+COMSC-221 Introduction to Computing Systems
+
+Fall and Spring. Credits: 4
+
+This course looks at the inner workings of a computer and computer systems. It is an introduction to computer architecture. Specific topics include assembly language programming, memory, and parallelism. This course is programming intensive.
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-201 or COMSC-205; and MATH-232. Coreq: COMSC-221L.
+Advisory: The department recommends, but does not require, that students take COMSC-225 prior to COMSC-221.
+
+COMSC-225 Software Design and Development
+
+Fall and Spring. Credits: 4
+
+Building large software systems introduces new challenges to software development. Appropriate design decisions and programming methodology can make a major difference in developing software that is correct and maintainable. In this course, students will learn techniques and tools that are used to build correct and maintainable software, improving their skills in designing, writing, debugging, and testing software. Topics include object-oriented design, testing, design patterns, and software architecture. This course is programming intensive.
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-205 (with a grade of C or better).
+
+COMSC-226 Engineering Robotic Systems
+
+Not Scheduled for This Year. Credits: 4
+
+This intermediate-level course presents a hands-on introduction to robotics. Each student will construct and modify a robot controlled by an Arduino-like microcontroller. Topics include kinematics, inverse kinematics, control-theory, sensors, mechatronics, and motion planning. Material will be delivered through one weekly lecture and one weekly guided laboratory. Assignments include a lab-preparatory homework, guided lab sessions, and out-of-class projects that build upon the in-class sessions. Students have access to the Fimbel Maker and Innovation lab for fabricating and demonstrating their robots.
+
+Applies to requirement(s): Math Sciences
+Restrictions: This course is limited to first-years and sophomores.
+Prereq: COMSC-150 or COMSC-151.
+
+COMSC-235 Applications of Machine Learning
+
+Fall. Credits: 4
+
+This course provides a practical and conceptual introduction to machine learning. Through programming projects and work with real-world data, we will study the motivations behind common machine learning algorithms, and the properties that determine whether or not they will work well for a particular task. We will also study practical applications of these algorithms to problems in areas such as speech, language, social sciences, and biology. Topics may include: supervised learning, classification, regression, clustering, decision trees, support vector machines, Naïve Bayes, neural networks and reinforcement learning.
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-205.
+Advisory: Students may not take this course after COMSC-335.
+
+COMSC-243 Topic
+
+
+
+COMSC-243GP Topic: 'Introduction to Game Programming'
+
+Fall. Credits: 4
+
+Video games are not only engaging to play, but challenging and fun to program. Many games are in fact simulations: they define a game world, and model that world and the interactions of elements in it. To program games, one must excel at this type of modeling while simultaneously handling real-time input and output to create a compelling experience. This project-based course explores techniques at the heart of game programming. By working through design and coding activities both with a team and independently, students will strengthen their core programming skills, their ability to model complex problems, and their skills for developing software in a team. This course is programming-intensive.
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-225.
+
+COMSC-243HC Topic: 'Human-Computer Interaction'
+
+Not Scheduled for This Year. Credits: 4
+
+Human-computer interaction (HCI) is a multidisciplinary field exploring the relationships between people and computers. This broad area includes the study of topics such as how people interact with technology, how design impacts what people do with technology, and methodologies for designing new technologies that really works for people. In this class, students will learn about and apply human-centered design principles, employ common research methods in the field, and explore recent literature in the field.
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-205 (may take concurrently). Prereq: COMSC-205 (may take concurrently).
+
+COMSC-243HR Topic: 'Human-Robot Interaction'
+
+Spring. Credits: 4
+
+Human-Robot Interaction is an interdisciplinary field that examines a broad set of questions about robots that are designed to interact with humans (e.g., educational, assistive, and service robots). How does the behavior and appearance of a robot change how humans perceive and interact with it? How can we design and program robots that are natural, trustworthy, and effective? In this course, students learn the algorithmic foundations of interactive robots, gain experience building and evaluating interactive robots, and read and present scholarly research papers. Class time is split between lecture, presentations by students, discussions, and hands-on activities.
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-205.
+
+COMSC-243PC Topic: 'Physical Computing Workshop'
+
+Spring. Credits: 4
+
+Physical computing requires the design of systems that integrate hardware and software components. By exploring sensors, such as a photoresistor to detect ambient light or an ultrasonic distance sensor to detect objects, and reactive elements, such as LEDs or motors, students will learn core principles of underlying physical computing design. Hands-on labs and design projects will provide students with the opportunity to make their own prototypes, supported by the resources of the Fimbel Maker & Innovation Lab.
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-151.
+
+COMSC-243ST Topic: 'Introduction to Search Technologies'
+
+Spring. Credits: 4
+
+The vast amount of unstructured and structured data on the web and in organizational databases has increased the need for approaches to processing large volumes of text. Such analyses help researchers and businesses to gain insights -- that would otherwise be too resource- and time-consuming to do manually -- into issues such as how much a consumer can be expected to spend in a particular context, the rise of hate groups and their impact on social media, or to whom a newly discovered manuscript may be attributed. In this course, students are introduced to tools and techniques used to gain these insights, such as Map-Reduce and Sentiment Analysis, in the context of Natural Language Processing and search technologies (e.g., Google).
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-150 or COMSC-151.
+
+COMSC-243SW Topic: 'Computing Systems Workshop'
+
+Not Scheduled for This Year. Credits: 4
+
+Beneath the polished surface of high-level programming languages like Python and consumer devices like gaming consoles and smartphones, lie the elemental parts of computer systems -- elements like hardware components, operating systems, and digital logic. This course will use a hands-on approach combining both hardware and software as a way of understanding such systems at a low level. Students will have the chance to construct various tangible projects using Raspberry Pi computers and will have access to the Fimbel Maker & Innovation lab. Specific topics will touch on low level data representation, sound generation, and the classic Nintendo Entertainment System.
+
+Applies to requirement(s): Math Sciences
+Prereq: COMSC-150 or COMSC-151.
+
+COMSC-295 Independent Study
+
+Fall and Spring. Credits: 1 - 4
+
+
+Restrictions: Contact instructor for independent study declaration form and signatures.
+Instructor permission required.
