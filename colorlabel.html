@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Course List with Color Labels</title>
+  <style>
+    table {
+      width: 80%;
+    }
+
+    td {
+      /* align text at the center */
+      text-align: center;
+    }
+
+    .taken {
+      background-color: #DAFFD5; /* light green */
+    }
+
+    .not-taken {
+      background-color: #FFD1DC; /* light red */
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2 style="text-align:center;">Course Progress Tracker</h2>
+
+  <table id="courseTable">
+    <thead>
+      <!-- table rows containing table headers -->
+      <tr>
+        <th>Course Code</th>
+        <th>Course Name</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!-- row 1 -->
+      <tr>
+        <td>CS101</td>
+        <td>Intro to Computer Science</td>
+        <td><button onclick="switchStatus(this)">Not Taken</button></td>
+      </tr>
+      <!-- row 2 -->
+      <tr>
+        <td>CS102</td>
+        <td>Data Structures</td>
+        <td><button onclick="switchStatus(this)">Not Taken</button></td>
+      </tr>
+      <!-- row 3 -->
+      <tr>
+        <td>CS201</td>
+        <td>Algorithms</td>
+        <td><button onclick="switchStatus(this)">Not Taken</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Javascript -->
+  <script>
+    function switchStatus(button) {
+      /* find the closest table row that contains button */
+      const row = button.closest("tr");
+
+      /* switch the button based on current status */
+      if (button.textContent === "Not Taken") {
+        button.textContent = "Taken";
+        row.classList.remove("not-taken");
+        row.classList.add("taken");
+      } else {
+        button.textContent = "Not Taken";
+        row.classList.remove("taken");
+        row.classList.add("not-taken");
+      }
+    }
+  </script>
+
+</body>
+</html>
