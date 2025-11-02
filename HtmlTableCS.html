@@ -1,0 +1,97 @@
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+td {
+  vertical-align: middle;
+}
+</style>
+<body>
+<table style="width:60%">
+  <tr>
+    <th>Requirement</th>
+    <th colspan="2">Class(es)</th>
+    <th>Fulfilled?</th>
+
+  </tr>
+
+  <tr>
+    <td>COMSC-151</td>
+    <td colspan="2"><input type="checkbox" value = "COMSC-151" onclick = "updateStatus(value)"> COMSC-151</td>
+    <td><p id="COMSC-151">0/1</p></td>
+  </tr>
+
+  <tr>
+    <td>COMSC-205</td>
+    <td colspan="2"><input type="checkbox" value = "COMSC-205" onclick = "updateStatus(value)"> COMSC-205</td>
+    <td><p id="COMSC-205">0/1</p></td>
+  </tr>
+
+  <tr>
+    <td>COMSC-221</td>
+    <td colspan="2"><input type="checkbox" value = "COMSC-221" onclick = "updateStatus(value)"> COMSC-221</td>
+    <td><p id="COMSC-221"> 0/1</p></td>
+  </tr>
+
+  <tr>
+    <td>COMSC-225</td>
+    <td colspan="2"><input type="checkbox" value = "COMSC-225" onclick = "updateStatus(value)"> COMSC-225</td>
+    <td><p id="COMSC-225"> 0/1</p></td>
+  </tr>
+
+  <tr>
+    <td>COMSC-312</td>
+    <td colspan="2"><input type="checkbox" value = "COMSC-312" onclick = "updateStatus(value)"> COMSC-312</td>
+    <td><p id="COMSC-312"> 0/1</p></td>
+  </tr> 
+
+  <tr>
+    <td>COMSC-322</td>
+    <td colspan="2"><input type="checkbox" value = "COMSC-322" onclick = "updateStatus(value)"> COMSC-322</td>
+    <td><p id="COMSC-322"> 0/1</p></td>
+  </tr>
+
+  <tr>
+    <td>MATH-232</td>
+    <td colspan="2"><input type="checkbox" value = "MATH-232" onclick = "updateStatus(value)"> MATH-232</td>
+    <td><p id="MATH-232"> 0/1</p></td>
+  </tr>
+
+  <tr>
+    <td>One additional course at the 200 or 300 level</td>
+    <td>200 lvls:<br><p><input type="checkbox" value = "200/300" onclick = "updateStatus(value)"> COMSC-235<br><input type="checkbox" value = "200/300" onclick = "updateStatus(value)"> 
+        COMSC-243GP<br><input type="checkbox" value = "200/300" onclick = "updateStatus(value)"> COMSC-243HR<br><input type="checkbox" value = "200/300" onclick = "updateStatus(value)"> 
+        COMSC-243PC<br><input type="checkbox" value = "200/300" onclick = "updateStatus(value)"> COMSC-243ST<br><input type="checkbox" value = "200/300" onclick = "updateStatus(value)"> 
+        COMSC-295</p><br><br></td>
+    <td>300 lvls:<br><p><input type="checkbox" value = "300" onclick = "updateStatus(value)"> COMSC-311<br><input type="checkbox" value = "300" onclick = "updateStatus(value)"> 
+        COMSC-334<br><input type="checkbox" value = "300" onclick = "updateStatus(value)"> COMSC-335<br><input type="checkbox" value = "300" onclick = "updateStatus(value)"> 
+        COMSC-341CD<br><input type="checkbox" value = "300" onclick = "updateStatus(value)"> COMSC-341DV<br><input type="checkbox" value = "300" onclick = "updateStatus(value)"> 
+        COMSC-341NL<br><input type="checkbox" value = "300" onclick = "updateStatus(value)"> COMSC-341RP<br><input type="checkbox" value = "300" onclick = "updateStatus(value)"> 
+        COMSC-341TE<br><input type="checkbox" value = "300" onclick = "updateStatus(value)"> COMSC-395</p></td>
+    <td>0/1</td>
+  </tr>
+
+  <tr>
+    <td>Two additional courses at the 300 level</td>
+    <td colspan="2" vertical-align: top>300 lvls:<br><p><input type="checkbox"> COMSC-311<br><input type="checkbox"> COMSC-334<br><input type="checkbox"> COMSC-335<br><input type="checkbox"> COMSC-341CD<br><input type="checkbox"> COMSC-341DV<br><input type="checkbox"> COMSC-341NL<br><input type="checkbox"> COMSC-341RP<br><input type="checkbox"> COMSC-341TE<br><input type="checkbox"> COMSC-395</p></td>
+    <td>0/2</td>
+  </tr>
+
+  <script>
+    function updateStatus(value) {
+
+        // Display the updated text
+          element = document.getElementById(value);
+          element.textContent = "1/1";
+
+    }
+  </script>
+
+</table>
+</html>
+
+
