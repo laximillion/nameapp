@@ -1,0 +1,26 @@
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color:#034876;
+    color:#fffffe;
+    height: 15%;
+    width: 70%;
+    margin: auto;
+    font-size: 2em;
+    margin-bottom: 30px;
+
+}
+
+question {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+label {
+    text-align: center;
+}
