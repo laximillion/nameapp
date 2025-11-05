@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>
+            Read Transcript
+        </title>
+    </head>
+    <body>
+        <td>
+            <tr>
+                <label for="transcript">Enter your transcript here:</label><br>
+            </tr>
+            <tr>
+                <input type="text" id="t1" name="tr1"><br>
+            </tr>
+            <tr>
+                <button onclick="read()">Submit</button><br>
+            </tr>
+            <tr>
+                <p id="t2">Nothing yet</p><br>
+            </tr>
+        </td>
+
+        <script>
+            function read() {
+                //set the input to a variable
+                var transcript = document.getElementById("t1").value;
+                //set the place it will all be printed to be blank
+                document.getElementById("t2").textContent = " ";
+
+
+                //array of the course codes
+                //I'll keep working on it but I don't know how to use this
+                //also I'm almost certain I've formatted it incorrectly
+                let courseCodes = 
+                ["ANTHR-", "ARCH-", "ARTH-", "ARTST-", "ASIAN-", "ASTR-", "BIOCH-", "BIOL-", 
+                "CHEM-", "CLAS-", "COMSC-", "CRPE-", "DANCE-", "DATA-", "ECON-", "EDUST-", 
+                "ENGL-", "EOS-", "ENVST-", "FYSEM-", "FREN-", "GNDST-", "GEOG-", "GEOL-", "GRMST-", 
+                "HIST-", "ITAL-", "JWST-", "LATAM-", "MATH-", "MUSIC-", "NEURO-", "PHIL-", "PE-",
+                "PHYS-", "POLIT-", "PSYCH-", "EDUC-", "RELIG-", "ROMLG-", "RES-", "SOCI-", "SPAN-", 
+                "STAT-"];
+
+                //IDEAL WORKING CODE SHOULD:
+                //check if there are any of the course code courses
+                //make substrings of the courses
+                //print it onto the end of the text block
+
+                //I am going to try to make it more general
+                if (transcript.includes("COMSC-")) {
+                    //find the first intstance
+                    let first = transcript.indexOf("COMSC-", 0);
+                    //find the place after the first instance but before all we want to print
+                    let secondStart = first + 6;
+                    //the length of the string that has been covered
+                    let length = 0;
+
+                    while((transcript.substring(length, transcript.length)).includes("COMSC-")) {
+                        //find the start of the end of where we want to print
+                        //update second
+
+                        //FIX: it should find the indexOf where the next course code is not just COMSC-
+                        let second = transcript.indexOf("COMSC-", secondStart);
+
+                        //TO FIX
+                        //what to do if it's the last course of this code in the string
+                        if (second == -1) {
+                            //need to make second until the next course code/end
+                            //second = ????
+                        }
+                        //THE ABOVE IS NOT WORKING
+
+                        //find the length of the substring that we want to print
+                        //update subLength
+                        let subLength = transcript.substring(first, second).length;
+                        //concat the substring we want to print to what already exists and print
+                        document.getElementById("t2").textContent = document.getElementById("t2").textContent + transcript.substring(first, second);
+                        //update first to be the next thing we want to print (second)
+                        first = transcript.indexOf("COMSC-", secondStart);
+                        //update secondStart
+                        secondStart = first + 6;
+                        //update length
+                        length = length + subLength;
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
