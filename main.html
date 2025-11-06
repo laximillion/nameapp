@@ -10,31 +10,18 @@
 
 <body>
     <h2>Mount Holyoke</h2>
-    
-    <question>
-        <label>What’s your major?
-            <input list="majors" name="major">
-        </label>
-    
-        <label>What’s your second major?
-            <input list="majors" name="major">
-        </label>
-    
-        <label>What’s your minor?
-            <input list="majors" name="major">
-        </label>
-    </question>
-    
 
-    <datalist id="majors">
-        <option value="Computer Science">
-        <option value="Mathematics">
-        <option value="Economics">
-        <option value="Accounting">
-        <option value="English">
-        <option value="Physics">
-    </datalist>
-
+    <form action="/action_page.php">
+        <label for="majors">Choose your major:</label>
+        <select name="majors" id="majors">
+            <option value="computerscience">Computer Science</option>
+            <option value="mathematics">Mathematics</option>
+            <option value="anthropology">Anthropology</option>
+            <option value="physics">Physics</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
 
 </body>
 
