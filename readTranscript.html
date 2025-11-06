@@ -7,7 +7,13 @@
     <body>
         <td>
             <tr>
-                <label for="transcript">Enter your transcript here:</label><br>
+                <label for="transcript">Enter your course type here:</label><br>
+            </tr>
+            <tr>
+                 <input type="text" id="course" name="tr1"><br>
+            </tr>
+            <tr>
+                <label for="transcript">Enter your courses here:</label><br>
             </tr>
             <tr>
                 <input type="text" id="t1" name="tr1"><br>
@@ -23,48 +29,39 @@
         <script>
             function read() {
                 //set the input to a variable
-                var transcript = document.getElementById("t1").value;
+                let transcript = document.getElementById("t1").value;
+
+                //find the course type
+                let value = document.getElementById("course");
+
                 //set the place it will all be printed to be blank
                 document.getElementById("t2").textContent = " ";
 
 
-                //array of the course codes
-                //I'll keep working on it but I don't know how to use this
-                //also I'm almost certain I've formatted it incorrectly
-                let courseCodes = 
-                ["ANTHR-", "ARCH-", "ARTH-", "ARTST-", "ASIAN-", "ASTR-", "BIOCH-", "BIOL-", 
-                "CHEM-", "CLAS-", "COMSC-", "CRPE-", "DANCE-", "DATA-", "ECON-", "EDUST-", 
-                "ENGL-", "EOS-", "ENVST-", "FYSEM-", "FREN-", "GNDST-", "GEOG-", "GEOL-", "GRMST-", 
-                "HIST-", "ITAL-", "JWST-", "LATAM-", "MATH-", "MUSIC-", "NEURO-", "PHIL-", "PE-",
-                "PHYS-", "POLIT-", "PSYCH-", "EDUC-", "RELIG-", "ROMLG-", "RES-", "SOCI-", "SPAN-", 
-                "STAT-"];
 
-                //IDEAL WORKING CODE SHOULD:
                 //check if there are any of the course code courses
                 //make substrings of the courses
                 //print it onto the end of the text block
 
-                //I am going to try to make it more general
-                if (transcript.includes("COMSC-")) {
+                if (transcript.includes(value)) {
                     //find the first intstance
-                    let first = transcript.indexOf("COMSC-", 0);
+                    let first = transcript.indexOf(value, 0);
                     //find the place after the first instance but before all we want to print
                     let secondStart = first + 6;
                     //the length of the string that has been covered
                     let length = 0;
 
-                    while((transcript.substring(length, transcript.length)).includes("COMSC-")) {
+                    while((transcript.substring(length, transcript.length)).includes(value)) {
                         //find the start of the end of where we want to print
                         //update second
 
                         //FIX: it should find the indexOf where the next course code is not just COMSC-
-                        let second = transcript.indexOf("COMSC-", secondStart);
+                        let second = transcript.indexOf(value, secondStart);
 
                         //TO FIX
                         //what to do if it's the last course of this code in the string
                         if (second == -1) {
-                            //need to make second until the next course code/end
-                            //second = ????
+                            second = transcript.length;
                         }
                         //THE ABOVE IS NOT WORKING
 
@@ -74,9 +71,9 @@
                         //concat the substring we want to print to what already exists and print
                         document.getElementById("t2").textContent = document.getElementById("t2").textContent + transcript.substring(first, second);
                         //update first to be the next thing we want to print (second)
-                        first = transcript.indexOf("COMSC-", secondStart);
+                        first = transcript.indexOf(value, secondStart);
                         //update secondStart
-                        secondStart = first + 6;
+                        secondStart = first + value.length;
                         //update length
                         length = length + subLength;
                     }
