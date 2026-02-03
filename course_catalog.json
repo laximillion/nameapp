@@ -1,0 +1,4628 @@
+{
+  "ANTHR-105": {
+    "courseCode": "ANTHR-105",
+    "title": "Introduction to Cultural Anthropology",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to first-years and sophomores."
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-204": {
+    "courseCode": "ANTHR-204",
+    "title": "Anthropology of Modern Japan",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-212": {
+    "courseCode": "ANTHR-212",
+    "title": "Shopping and Swapping: Cultures Consumption and Exchange",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-216AD": {
+    "courseCode": "ANTHR-216AD",
+    "title": "Special Topics in Anthropology: 'Approaching Death: Culture, Health, and Science'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-216AU": {
+    "courseCode": "ANTHR-216AU",
+    "title": "Special Topics in Anthropology: 'Peoples and Cultures of Indigenous Australia'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-216BE": {
+    "courseCode": "ANTHR-216BE",
+    "title": "Special Topics in Anthropology: 'Black Ethnographers'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "CRPE-240BE"
+    ]
+  },
+  "ANTHR-216EF": {
+    "courseCode": "ANTHR-216EF",
+    "title": "Special Topics in Anthropology: 'Ethnographic Film'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105",
+      "FMT-102",
+      "FMT-103"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "FMT-230EF"
+    ]
+  },
+  "ANTHR-216FD": {
+    "courseCode": "ANTHR-216FD",
+    "title": "Special Topics in Anthropology: 'Ethnographic Food Documentary'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Community-Based Learning"
+    ],
+    "crossListedAs": [
+      "CRPE-240EF"
+    ]
+  },
+  "ANTHR-216GH": {
+    "courseCode": "ANTHR-216GH",
+    "title": "Special Topics in Anthropology: 'Case Studies in Global Health'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-216HM": {
+    "courseCode": "ANTHR-216HM",
+    "title": "Special Topics in Anthropology: 'Feminist Engagements with Hormones'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "GNDST-241HR"
+    ]
+  },
+  "ANTHR-216HP": {
+    "courseCode": "ANTHR-216HP",
+    "title": "Special Topics in Anthropology: 'Feminist Health Politics'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "GNDST-241HP"
+    ]
+  },
+  "ANTHR-216HR": {
+    "courseCode": "ANTHR-216HR",
+    "title": "Special Topics in Anthropology: 'Anthropology and Human Rights'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-216LA": {
+    "courseCode": "ANTHR-216LA",
+    "title": "Special Topics in Anthropology: 'Anthropology of Latin America'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-216MB": {
+    "courseCode": "ANTHR-216MB",
+    "title": "Special Topics in Anthropology: 'The Medical Body'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-216MH": {
+    "courseCode": "ANTHR-216MH",
+    "title": "Special Topics in Anthropology: 'Migration and Human Rights'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S",
+      "M",
+      "H"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-216PR": {
+    "courseCode": "ANTHR-216PR",
+    "title": "Special Topics in Anthropology: 'Precarious Labor'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105",
+      "SOCI-123"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-216RC": {
+    "courseCode": "ANTHR-216RC",
+    "title": "Special Topics in Anthropology: 'Representing Race'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "CRPE-240RE"
+    ]
+  },
+  "ANTHR-216RE": {
+    "courseCode": "ANTHR-216RE",
+    "title": "Special Topics in Anthropology: 'Anthropology of Reproduction'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-221": {
+    "courseCode": "ANTHR-221",
+    "title": "Anthropology of Media",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "FMT-230AM"
+    ]
+  },
+  "ANTHR-230": {
+    "courseCode": "ANTHR-230",
+    "title": "Language in Culture and Society",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-235": {
+    "courseCode": "ANTHR-235",
+    "title": "History of Anthropological Thought",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-240": {
+    "courseCode": "ANTHR-240",
+    "title": "Medical Anthropology",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-261": {
+    "courseCode": "ANTHR-261",
+    "title": "Cultures of Power in Mexico",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive",
+      "No previous knowledge of Mexican culture and history is required."
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-275": {
+    "courseCode": "ANTHR-275",
+    "title": "Research Methods in Cultural Anthropology",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to Anthropology majors.",
+      "Community-Based Learning"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-295": {
+    "courseCode": "ANTHR-295",
+    "title": "Independent Study",
+    "department": "ANTHR",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-314": {
+    "courseCode": "ANTHR-314",
+    "title": "Science, Feminism, and Mount Holyoke",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-316BF": {
+    "courseCode": "ANTHR-316BF",
+    "title": "Special Topics in Anthropology: 'Black Feminist Anthropology'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors",
+      "Writing-Intensive, Speaking-Intensive"
+    ],
+    "crossListedAs": [
+      "CRPE-332"
+    ]
+  },
+  "ANTHR-316CA": {
+    "courseCode": "ANTHR-316CA",
+    "title": "Special Topics in Anthropology: 'Carbon Christianity'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "RELIG-331CA"
+    ]
+  },
+  "ANTHR-316DD": {
+    "courseCode": "ANTHR-316DD",
+    "title": "Special Topics in Anthropology: 'Drugs and Devices'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-316DM": {
+    "courseCode": "ANTHR-316DM",
+    "title": "Special Topics in Anthropology: 'Decolonizing Museums'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-316EG": {
+    "courseCode": "ANTHR-316EG",
+    "title": "Special Topics in Anthropology: 'Eggs and Embryos: Innovations in Reproductive and Genetic Technologies'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "GNDST-333EG"
+    ]
+  },
+  "ANTHR-316ET": {
+    "courseCode": "ANTHR-316ET",
+    "title": "Special Topics in Anthropology: 'Advanced Seminar in Ethnomusicology'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "MUSIC-374"
+    ]
+  },
+  "ANTHR-316EX": {
+    "courseCode": "ANTHR-316EX",
+    "title": "Special Topics in Anthropology: 'Craft and Composition: Experimental Ethnography'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-316HD": {
+    "courseCode": "ANTHR-316HD",
+    "title": "Special Topics in Anthropology: 'Problematizing Humanitarianism'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-316LA": {
+    "courseCode": "ANTHR-316LA",
+    "title": "Special Topics in Anthropology: 'Race and Religion in Latin America'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "RELIG-331LA"
+    ]
+  },
+  "ANTHR-316LW": {
+    "courseCode": "ANTHR-316LW",
+    "title": "Special Topics in Anthropology: 'Ethnographies of Law'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-316ME": {
+    "courseCode": "ANTHR-316ME",
+    "title": "Special Topics in Anthropology: 'Political Anthropology of the Middle East'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "ASIAN-362"
+    ]
+  },
+  "ANTHR-316ND": {
+    "courseCode": "ANTHR-316ND",
+    "title": "Special Topics in Anthropology: 'Indigenous Data Sovereignty'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "All students who enroll in Indigenous Data Sovereignty must have taken at least one course in Native American and Indigenous Studies (NAIS). Please contact the instructor with any questions."
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-316PG": {
+    "courseCode": "ANTHR-316PG",
+    "title": "Special Topics in Anthropology: 'Who's Involved?: Participatory Governance, Emerging Technologies and Feminism'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "GNDST-333PG"
+    ]
+  },
+  "ANTHR-316RC": {
+    "courseCode": "ANTHR-316RC",
+    "title": "Special Topics in Anthropology: 'Ethnographic Research in Religious Communities'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "RELIG-331RC"
+    ]
+  },
+  "ANTHR-316SE": {
+    "courseCode": "ANTHR-316SE",
+    "title": "Special Topics in Anthropology: 'Anthropology of Secularism'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "RELIG-331SE"
+    ]
+  },
+  "ANTHR-316VN": {
+    "courseCode": "ANTHR-316VN",
+    "title": "Special Topics in Anthropology: 'Violence and the State'",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-317": {
+    "courseCode": "ANTHR-317",
+    "title": "Play",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-342": {
+    "courseCode": "ANTHR-342",
+    "title": "Science as Culture",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-350": {
+    "courseCode": "ANTHR-350",
+    "title": "Issues in Contemporary Anthropological Theory",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [
+      "ANTHR-235"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to seniors.; This course is limited to Anthropology majors.",
+      "Five College students must obtain instructor permission to register.",
+      "Speaking-Intensive, Writing-Intensive",
+      "Anthropology majors should take ANTHR-235 before ANTHR-350."
+    ],
+    "crossListedAs": []
+  },
+  "ANTHR-352": {
+    "courseCode": "ANTHR-352",
+    "title": "Digital Cultures",
+    "department": "ANTHR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ANTHR-395": {
+    "courseCode": "ANTHR-395",
+    "title": "Independent Study",
+    "department": "ANTHR",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARCH-203": {
+    "courseCode": "ARCH-203",
+    "title": "Scene Design for Theater and Film",
+    "department": "ARCH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Lab; $50 materials fee. Any additional design supplies and materials are the responsibility of the student."
+    ],
+    "crossListedAs": [
+      "FMT-240SD"
+    ]
+  },
+  "ARCH-205AD": {
+    "courseCode": "ARCH-205AD",
+    "title": "Introduction to Architecture: 'Design'",
+    "department": "ARCH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "One semester of design or drawing is recommended. Preference given to first-year and sophomore students; others request permission.",
+      "This course is limited to first-years and sophomores.",
+      "Students enrolled in this course will be responsible for some of the cost of materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARCH-225ED": {
+    "courseCode": "ARCH-225ED",
+    "title": "Intermediate Studies in Architecture: 'Environmental Principles'",
+    "department": "ARCH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARCH-205"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for some of the cost of materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARCH-295": {
+    "courseCode": "ARCH-295",
+    "title": "Independent Study",
+    "department": "ARCH",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARCH-305UE": {
+    "courseCode": "ARCH-305UE",
+    "title": "Advanced Topics in Architecture: 'Public Space and Everyday Life in Globalizing Spanish Cities'",
+    "department": "ARCH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "SPAN-212"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Taught in Spanish.",
+      "Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "SPAN-350UE"
+    ]
+  },
+  "ARCH-311FD": {
+    "courseCode": "ARCH-311FD",
+    "title": "Design-Build Studio: 'Foldable Structures'",
+    "department": "ARCH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARCH-205",
+      "ARCH-225"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Math and Computer Science majors welcome with instructor permission."
+    ],
+    "crossListedAs": []
+  },
+  "ARCH-311MK": {
+    "courseCode": "ARCH-311MK",
+    "title": "Makerspace Design-Build Studio",
+    "department": "ARCH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARCH-205",
+      "ARCH-225"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARCH-311TH": {
+    "courseCode": "ARCH-311TH",
+    "title": "Design-Build Studio: 'Tea House'",
+    "department": "ARCH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARCH-205",
+      "ARCH-225"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ARCH-395": {
+    "courseCode": "ARCH-395",
+    "title": "Independent Study",
+    "department": "ARCH",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARCH-395P": {
+    "courseCode": "ARCH-395P",
+    "title": "Independent Study with Practicum",
+    "department": "ARCH",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-101": {
+    "courseCode": "ARTH-101",
+    "title": "The Built Environment",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ARTH-102": {
+    "courseCode": "ARTH-102",
+    "title": "Art and Architecture in the Premodern World",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course replaces ARTH-100PW and may not be taken by students who have completed that course."
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-103": {
+    "courseCode": "ARTH-103",
+    "title": "Western Art: 1400-2000",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course replaces ARTH-100WA and ARTH-100SE, and may not be taken by students who have completed either one."
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-104": {
+    "courseCode": "ARTH-104",
+    "title": "Talking Pictures: An Introduction to Film",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "FMT-103"
+    ]
+  },
+  "ARTH-105": {
+    "courseCode": "ARTH-105",
+    "title": "Arts of Asia",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "RELIG-108"
+    ]
+  },
+  "ARTH-231": {
+    "courseCode": "ARTH-231",
+    "title": "Northern Renaissance Art",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-232FR": {
+    "courseCode": "ARTH-232FR",
+    "title": "Renaissance Cities: 'Florence'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-232RM": {
+    "courseCode": "ARTH-232RM",
+    "title": "Renaissance Cities: 'Rome'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-233": {
+    "courseCode": "ARTH-233",
+    "title": "Italian Renaissance Architecture",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "First-year students may seek permission if they have 4 credits in Art History.",
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-236": {
+    "courseCode": "ARTH-236",
+    "title": "The Global Renaissance",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-241": {
+    "courseCode": "ARTH-241",
+    "title": "Nineteenth-Century European Art: Neoclassicism to Impressionism",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-242": {
+    "courseCode": "ARTH-242",
+    "title": "History of Photography: The First Hundred Years",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-244": {
+    "courseCode": "ARTH-244",
+    "title": "Global Modernism",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-245": {
+    "courseCode": "ARTH-245",
+    "title": "Hot Art During the Cold War",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-246": {
+    "courseCode": "ARTH-246",
+    "title": "Photography As Art",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-250": {
+    "courseCode": "ARTH-250",
+    "title": "American Art",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-290AN": {
+    "courseCode": "ARTH-290AN",
+    "title": "Issues in Art History: 'The Garden in the Ancient World'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Taught in English."
+    ],
+    "crossListedAs": [
+      "CLAS-250AW"
+    ]
+  },
+  "ARTH-290AR": {
+    "courseCode": "ARTH-290AR",
+    "title": "Issues in Art History: 'Art and Experience in Ancient Rome'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "CLAS-250AR"
+    ]
+  },
+  "ARTH-290BC": {
+    "courseCode": "ARTH-290BC",
+    "title": "Issues in Art History: 'Bollywood: A Cinema of Interruptions'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": [
+      "FMT-230BC"
+    ]
+  },
+  "ARTH-290CA": {
+    "courseCode": "ARTH-290CA",
+    "title": "Issues in Art History: 'Modern Architecture: From Canon to Anticanon'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-290MA": {
+    "courseCode": "ARTH-290MA",
+    "title": "Issues in Art History: 'High Renaissance and Mannerist Art in Italy'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-290MV": {
+    "courseCode": "ARTH-290MV",
+    "title": "Issues in Art History: 'Art, Nature, and Ecology in the Medieval World'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-290RC": {
+    "courseCode": "ARTH-290RC",
+    "title": "Issues in Art History: 'Medieval Architecture'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-290RP": {
+    "courseCode": "ARTH-290RP",
+    "title": "Issues in Art History: 'Renaissance Print Culture'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-290SP": {
+    "courseCode": "ARTH-290SP",
+    "title": "Issues in Art History: 'Medieval Iberia: Art, Society, and Culture'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": [
+      "RELIG-225SP"
+    ]
+  },
+  "ARTH-290TK": {
+    "courseCode": "ARTH-290TK",
+    "title": "Issues in Art History: 'Art History Toolkit: Research, Writing, Methods, Careers'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to sophomores and juniors.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-290WA": {
+    "courseCode": "ARTH-290WA",
+    "title": "Issues in Art History: 'Where Are Our Women Artists? Mapping Femme Creatives Across Time and Borders'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-295": {
+    "courseCode": "ARTH-295",
+    "title": "Independent Study",
+    "department": "ARTH",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-300AM": {
+    "courseCode": "ARTH-300AM",
+    "title": "Seminar: 'Architecture in Miniature in Asia'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-300MY": {
+    "courseCode": "ARTH-300MY",
+    "title": "Seminar: 'Building After Rome: Early Medieval Architecture'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-301DG": {
+    "courseCode": "ARTH-301DG",
+    "title": "Topics in Art History: 'Indigenous Futures'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "M",
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "SPAN-212"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Taught in Spanish.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "SPAN-340DG"
+    ]
+  },
+  "ARTH-301MH": {
+    "courseCode": "ARTH-301MH",
+    "title": "Topics in Art History: 'Making History'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "A course in American or modern art is recommended.",
+      "This course is open to juniors and seniors",
+      "Four class presentations, four short papers, and one term paper."
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-302RM": {
+    "courseCode": "ARTH-302RM",
+    "title": "Great Cities: 'Rome, the Eternal City'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-321": {
+    "courseCode": "ARTH-321",
+    "title": "Objects of Exchange",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTH-102",
+      "ARTH-103",
+      "ARTH-105"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-340AM": {
+    "courseCode": "ARTH-340AM",
+    "title": "Seminar in Modern Art: 'After Impressionism'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-352LW": {
+    "courseCode": "ARTH-352LW",
+    "title": "Topics in Modern and Contemporary Architecture: 'Spaces of Law'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-370TM": {
+    "courseCode": "ARTH-370TM",
+    "title": "Research in Art History and Architectural Studies: 'Time'",
+    "department": "ARTH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ARTH-395": {
+    "courseCode": "ARTH-395",
+    "title": "Independent Study",
+    "department": "ARTH",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-112": {
+    "courseCode": "ARTST-112",
+    "title": "Introduction to Art Practices",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This class does not fulfill the 100-level course requirement for the Art Studio major or minor. Students who are considering becoming an Art Studio major or minor should enroll in one of the other 100-level Art Studio courses. This class does not fulfill the 100-level course prerequisite for Art Studio 200-level courses. Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-120FR": {
+    "courseCode": "ARTST-120FR",
+    "title": "Drawing I: 'Form, Structure, and Space'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "No previous studio experience required. A student may take only one ARTST-120, ARTST-131, or ARTST-142.",
+      "Along with ARTST-131 and ARTST-142, this 120 course will function as a prerequisite course for 200-level studio art courses. Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-131MM": {
+    "courseCode": "ARTST-131MM",
+    "title": "Art Studio Foundations: 'Making and Meaning'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "No previous studio experience is required. A student may take only one ARTST-120, ARTST-131, or ARTST-142.",
+      "This course is limited to first-years and sophomores.",
+      "Along with ARTST-120 and ARTST-142, this 131 course will function as a prerequisite course for 200-level studio art courses. Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-142AT": {
+    "courseCode": "ARTST-142AT",
+    "title": "Digital Art Foundations: 'Art and 'Technology'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "No previous studio experience is required. A student may take only one ARTST-120, ARTST-131, or ARTST-142.",
+      "This course is limited to first-years and sophomores.",
+      "Along with ARTST-120 and ARTST-131, this 142 course will function as a prerequisite course for 200-level studio art courses. Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-220NT": {
+    "courseCode": "ARTST-220NT",
+    "title": "Drawing II: 'Drawing as Installation'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials. For Art Studio majors only for the first week of pre-registration. Then open to all in the second week."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-226DF": {
+    "courseCode": "ARTST-226DF",
+    "title": "Topics in Art Studio: 'Costume Design for Stage and Film'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Some drawing and painting skills along with an interest in costume history are recommended but not required."
+    ],
+    "crossListedAs": [
+      "FMT-240DF"
+    ]
+  },
+  "ARTST-226DH": {
+    "courseCode": "ARTST-226DH",
+    "title": "Topics in Art Studio: 'Print/Digital Hybrid'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for some of the cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-226EV": {
+    "courseCode": "ARTST-226EV",
+    "title": "Topics in Art Studio: 'Experimental Video: Theory and Practice'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "FMT-102",
+      "FMT-103",
+      "FMT-104",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to FMT or ARTST majors/minors only.",
+      "Five College students: Open to Five College Film majors. Others majors require instructor permission."
+    ],
+    "crossListedAs": [
+      "FMT-240EV"
+    ]
+  },
+  "ARTST-226PM": {
+    "courseCode": "ARTST-226PM",
+    "title": "Topics in Art Studio: 'Expanded Print Media'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-236": {
+    "courseCode": "ARTST-236",
+    "title": "Painting I",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials. For Art Studio majors only for the first week of pre-registration. Then open to all in the second week."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-242DM": {
+    "courseCode": "ARTST-242DM",
+    "title": "Topics in Digital Art: 'Digital Media Art'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142",
+      "MUSIC-102",
+      "MUSIC-203",
+      "FMT-240VP",
+      "ARCH-205"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-242PE": {
+    "courseCode": "ARTST-242PE",
+    "title": "Topics in Digital Art: 'Digital Fabrication and Media Installation'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to ARTST/ARCH/FMT/MUSIC/DANCE majors only.",
+      "Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-246": {
+    "courseCode": "ARTST-246",
+    "title": "Sculpture I",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-256": {
+    "courseCode": "ARTST-256",
+    "title": "Printmaking I",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials. For Art Studio majors only for the first week of pre-registration. Then open to all in the second week."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-263ZP": {
+    "courseCode": "ARTST-263ZP",
+    "title": "Topics in Paper and Book Arts: 'Zines, Prints & Ephemera'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-280CK": {
+    "courseCode": "ARTST-280CK",
+    "title": "Topics in Art Studio: 'Collective Making'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials. For Art Studio majors only for the first week of pre-registration. Then open to all in the second week."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-280CM": {
+    "courseCode": "ARTST-280CM",
+    "title": "Topics in Art Studio: 'Casting, the Multiple, and Installation'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Five College students require instructor's permission for this course.",
+      "Students enrolled in this course will be responsible for cost of course materials. For Art Studio majors only for the first week of pre-registration. Then open to all in the second week."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-280EP": {
+    "courseCode": "ARTST-280EP",
+    "title": "Topics in Art Studio: 'Experimental Painting and Drawing'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Course limited to sophomores, juniors and seniors",
+      "Students enrolled in this course will be responsible for cost of course materials. For Art Studio majors only for the first week of pre-registration. Then open to all in the second week."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-280PT": {
+    "courseCode": "ARTST-280PT",
+    "title": "Topics in Art Studio: 'Painting the Series'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials. For Art Studio majors only for the first week of pre-registration. Then open to all in the second week."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-280SJ": {
+    "courseCode": "ARTST-280SJ",
+    "title": "Topics in Art Studio: 'Art, Public Space, and Social Justice Activism'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "GNDST-204SJ"
+    ]
+  },
+  "ARTST-280WE": {
+    "courseCode": "ARTST-280WE",
+    "title": "Topics in Art Studio: 'Wearables and Soft Sculpture'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [
+      "ARTST-120",
+      "ARTST-131",
+      "ARTST-142"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students enrolled in this course will be responsible for cost of course materials. For Art Studio majors only for the first week of pre-registration. Then open to all in the second week."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-295": {
+    "courseCode": "ARTST-295",
+    "title": "Independent Study",
+    "department": "ARTST",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-330": {
+    "courseCode": "ARTST-330",
+    "title": "Junior Studio",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to juniors only.; This course is limited to Art Studio majors only.",
+      "Students will be responsible for cost of materials.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-380AE": {
+    "courseCode": "ARTST-380AE",
+    "title": "Advanced Topics in Art Studio: 'Race, Gender and Sexual Aesthetics in the Global Era'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course has a $75 materials fee."
+    ],
+    "crossListedAs": [
+      "GNDST-333AE"
+    ]
+  },
+  "ARTST-380PE": {
+    "courseCode": "ARTST-380PE",
+    "title": "Advanced Topics in Art Studio: 'Media and Performance'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "FMT-330PE"
+    ]
+  },
+  "ARTST-380TX": {
+    "courseCode": "ARTST-380TX",
+    "title": "Advanced Topics in Art Studio: 'Abolition and Radical Textiles'",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course has a $75 materials fee.",
+      "Speaking-Intensive, Writing-Intensive, Community-Based Learning"
+    ],
+    "crossListedAs": [
+      "CRPE-373",
+      "GNDST-333TX"
+    ]
+  },
+  "ARTST-390": {
+    "courseCode": "ARTST-390",
+    "title": "Advanced Studio",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to Art Studio majors only.",
+      "Students will be responsible for cost of materials. MHC Art Studio majors only. Repeatable for credit."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-395": {
+    "courseCode": "ARTST-395",
+    "title": "Independent Study",
+    "department": "ARTST",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Senior Art Studio majors may elect to become candidates for an honors thesis with approval of the Art Studio faculty. Students enrolled in all Art Studio courses will be responsible for cost of course materials.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ARTST-395SS": {
+    "courseCode": "ARTST-395SS",
+    "title": "Senior Studio",
+    "department": "ARTST",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Limited to Mount Holyoke Art Studio majors in their senior year; Contact instructor for independent study declaration form and signatures.",
+      "Students will be responsible for cost of materials. MHC Art Studio majors only. Repeatable for credit.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-211CH": {
+    "courseCode": "ASIAN-211CH",
+    "title": "Topics in Asian Studies: 'Contemporary Chinese Media Culture'",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "No knowledge of the Chinese language is required.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "FMT-230CH"
+    ]
+  },
+  "ASIAN-211PT": {
+    "courseCode": "ASIAN-211PT",
+    "title": "Topics in Asian Studies: 'From Shadow Puppets to Digital Screens'",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "No knowledge of the Chinese language is required.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "FMT-230PT"
+    ]
+  },
+  "ASIAN-214": {
+    "courseCode": "ASIAN-214",
+    "title": "Philosophical Foundations of Chinese Thought: the Ancient Period",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "PHIL-212"
+    ]
+  },
+  "ASIAN-215": {
+    "courseCode": "ASIAN-215",
+    "title": "Androgyny and Gender Negotiation in Contemporary Chinese Women's Theater",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Taught in English."
+    ],
+    "crossListedAs": [
+      "GNDST-204CW",
+      "FMT-230CW"
+    ]
+  },
+  "ASIAN-216": {
+    "courseCode": "ASIAN-216",
+    "title": "Making is Thinking: Craft Cultures in East Asia",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "No knowledge of the East Asian languages is required.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-247": {
+    "courseCode": "ASIAN-247",
+    "title": "Chinese Women Writers in the 20th and 21st Centuries",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Taught in English. This class may be especially suitable for students who do not identify as native speakers of English."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-340": {
+    "courseCode": "ASIAN-340",
+    "title": "Love, Gender-Crossing, and Women's Supremacy: A Reading of The Story of the Stone",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "M",
+      "H"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Intended for East Asian Studies majors and Asian Studies minors.",
+      "Taught in English.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "GNDST-333HH"
+    ]
+  },
+  "ASIAN-362": {
+    "courseCode": "ASIAN-362",
+    "title": "Political Anthropology of the Middle East",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "S",
+      "M"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": [
+      "ANTHR-316ME"
+    ]
+  },
+  "ASIAN-110": {
+    "courseCode": "ASIAN-110",
+    "title": "is the first semester of the first-year Chinese course. This course is intended for students with no or very little prior knowledge of Mandarin Chinese. Points of focus include pronunciation and tones, basic syntax, high-frequency vocabulary words, conversational flow, and an introduction to reading and writing Chinese characters. Relevant cultural knowledge and activities will be incorporated into the curriculum. The class will initially be conducted in both English and Chinese, with the proportion of Chinese steadily increasing over the first two months, after which the great majority of instruction will be in Chinese. Learning is supplemented by online learning resources, out-of-class language partner sessions, Language and Culture Commons Question and Answer sessions and the Chinese Language Table.",
+    "department": "ASIAN",
+    "credits": "",
+    "semester": "",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Students with previous or equivalent language study should contact Lisha Xu (lxu@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-111": {
+    "courseCode": "ASIAN-111",
+    "title": "continues ASIAN-110 First Year Chinese I, with an introduction to Mandarin Chinese and the development of oral proficiency as well as gradual acquisition of reading and writing skills. Learning is supplemented by online learning resources, out-of-class language partner sessions, Language and Culture Commons Question and Answer sessions and the Chinese Language Table.",
+    "department": "ASIAN",
+    "credits": "",
+    "semester": "",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-110"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students with previous or equivalent language study should contact Lisha Xu (lxu@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-120": {
+    "courseCode": "ASIAN-120",
+    "title": "First Year Japanese I",
+    "department": "ASIAN",
+    "credits": "6",
+    "semester": "Fall",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Only first-year, sophomores, and juniors may pre-register; if space is available, seniors may be able to register during Add/Drop; students with previous training in Japanese should contact Naoko Nemoto (nnemoto@mtholyoke.edu) for placement.",
+      "This course is limited to first-years, sophomores, and juniors"
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-121": {
+    "courseCode": "ASIAN-121",
+    "title": "First Year Japanese II",
+    "department": "ASIAN",
+    "credits": "6",
+    "semester": "Spring",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-120"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students with previous training in Japanese outside of MHC should contact Naoko Nemoto (nnemoto@mtholyoke.edu)"
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-130": {
+    "courseCode": "ASIAN-130",
+    "title": "First Year Arabic I",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Students with previous language study should contact May George (mgeorge@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-131": {
+    "courseCode": "ASIAN-131",
+    "title": "First Year Arabic II",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-130"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ASIAN-160": {
+    "courseCode": "ASIAN-160",
+    "title": "Beginning Korean I",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Students with previous training in Korean should contact Kyae-Sung Park (kspark@mtholyoke.edu) for placement.",
+      "This course is limited to first-years, sophomores, and juniors",
+      "Only first-years, sophomores, and juniors may pre-register; if there are any remaining seats, seniors will be able to register during Add/Drop."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-161": {
+    "courseCode": "ASIAN-161",
+    "title": "Beginning Korean II",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-160"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Kyae-Sung Park (kspark@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-212": {
+    "courseCode": "ASIAN-212",
+    "title": "is the first semester of the second-year Chinese course. This course will consolidate and expand students' competencies in the four fundamental areas of language learning -- speaking, listening, reading, and writing. Students will improve their oral fluency, study more complex grammatical structures, and enlarge their vocabulary. Emphasis on facilitating daily-life interactions will be supplemented and expanded by increasing discussion of broader issues in society. Students will develop a deeper and broader understanding of relevant aspects of Chinese culture. This course is conducted mostly in Chinese. Learning is supplemented by online learning resources, out-of-class language partner sessions, Language and Culture Commons Question and Answer sessions and the Chinese Language Table.",
+    "department": "ASIAN",
+    "credits": "",
+    "semester": "",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-111"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Lisha Xu (lxu@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-213": {
+    "courseCode": "ASIAN-213",
+    "title": "continues ASIAN-212 Second Year Chinese I. A continuing emphasis on facility in daily life interactions will be supplemented and expanded by increasing discussion of broader issues in society, including education, employment, etc.",
+    "department": "ASIAN",
+    "credits": "",
+    "semester": "",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-212"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Lisha Xu (lxu@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-222": {
+    "courseCode": "ASIAN-222",
+    "title": "is the third-semester course in Japanese for those who have taken ASIAN-121 or have equivalent preparation in Japanese. Includes approximately 250 kanji. Students in this course learn to listen and comprehend conversations about more sophisticated topics they would encounter in daily life in Japan, such as conducting conversations in a hospital, expressing their plans and intentions, asking a favor, asking for and listening to navigation directions, and giving and receiving gifts. They learn how to interact with Japanese people in such situations with appropriate cultural manners in preparation for any potential stay in Japan such as for study abroad or an internship.",
+    "department": "ASIAN",
+    "credits": "",
+    "semester": "",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-121"
+    ],
+    "corequisites": [],
+    "notes": [
+      "ASIAN-121 or equivalent. Students with previous training in Japanese outside of MHC should consult Naoko Nemoto (nnemoto@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-223": {
+    "courseCode": "ASIAN-223",
+    "title": "is the fourth semester course in Japanese for those who have taken ASIAN-222 or have equivalent preparation in Japanese. Students in this course are taught to be able to explain procedures, ask and express opinions, understand and express complaints and apologies, while learning grammatical constructions such as passive, causative, causative-passive and different levels of politeness.",
+    "department": "ASIAN",
+    "credits": "",
+    "semester": "",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-222"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students with previous training in Japanese outside of MHC should consult Naoko Nemoto (nnemoto@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-232": {
+    "courseCode": "ASIAN-232",
+    "title": "Second Year Arabic I",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-131"
+    ],
+    "corequisites": [],
+    "notes": [
+      "ASIAN-131 or equivalent. Contact Naoko Nemoto (nnemoto@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-233": {
+    "courseCode": "ASIAN-233",
+    "title": "Second Year Arabic II",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-232"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Naoko Nemoto (nnemoto@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-262": {
+    "courseCode": "ASIAN-262",
+    "title": "Intermediate Korean I",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-161"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Kyae-Sung Park for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-263": {
+    "courseCode": "ASIAN-263",
+    "title": "Intermediate Korean II",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-262"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Kyae-Sung Park (kspark@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-310": {
+    "courseCode": "ASIAN-310",
+    "title": "Third Year Chinese I",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-213"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Lisha Xu (lxu@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-311": {
+    "courseCode": "ASIAN-311",
+    "title": "Third Year Chinese II",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-310"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Lisha Xu (lxu@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-314": {
+    "courseCode": "ASIAN-314",
+    "title": "Learning Chinese Through Film",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "M",
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-311"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Lisha Xu (lxu@mtholyoke.edu) for placement.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-315": {
+    "courseCode": "ASIAN-315",
+    "title": "Business Culture and Communication in China",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "M",
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-311"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Contact Lisha Xu (lxu@mtholyoke.edu) for placement.",
+      "Taught entirely in Chinese.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-317": {
+    "courseCode": "ASIAN-317",
+    "title": "Chinese Society and Culture: Reflections In Literature and Media",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "M",
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-311"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-318": {
+    "courseCode": "ASIAN-318",
+    "title": "Business and Intercultural Communication In Chinese Society",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "M",
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-311"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students who have not taken ASIAN-311 but have equivalent or higher Chinese proficiency, including native Chinese speakers, may request instructor permission to register.",
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-324": {
+    "courseCode": "ASIAN-324",
+    "title": "Third Year Japanese I",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-223"
+    ],
+    "corequisites": [],
+    "notes": [
+      "ASIAN-223 or equivalent. Students with previous training in Japanese outside of MHC should consult Naoko Nemoto (nnemoto@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-326": {
+    "courseCode": "ASIAN-326",
+    "title": "Third Year Japanese II",
+    "department": "ASIAN",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "H",
+      "L"
+    ],
+    "prerequisites": [
+      "ASIAN-324"
+    ],
+    "corequisites": [],
+    "notes": [
+      "ASIAN-324 or equivalent. Students with previous training in Japanese outside of MHC should consult Naoko Nemoto (nnemoto@mtholyoke.edu) for placement."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-295": {
+    "courseCode": "ASIAN-295",
+    "title": "Independent Study",
+    "department": "ASIAN",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ASIAN-395": {
+    "courseCode": "ASIAN-395",
+    "title": "Independent Study",
+    "department": "ASIAN",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ASTR-100": {
+    "courseCode": "ASTR-100",
+    "title": "Stars and Galaxies",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ASTR-104": {
+    "courseCode": "ASTR-104",
+    "title": "Planet Earth",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ASTR-105": {
+    "courseCode": "ASTR-105",
+    "title": "The Sky",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ASTR-223": {
+    "courseCode": "ASTR-223",
+    "title": "Planetary Science",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ASTR-226": {
+    "courseCode": "ASTR-226",
+    "title": "Cosmology",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "ASTR-100",
+      "ASTR-101",
+      "ASTR-102",
+      "ASTR-115"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ASTR-228": {
+    "courseCode": "ASTR-228",
+    "title": "Astrophysics I: Stars and Galaxies",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "PHYS-110",
+      "MATH-102"
+    ],
+    "corequisites": [],
+    "notes": [
+      "PHYS-201 and MATH-203 strongly suggested."
+    ],
+    "crossListedAs": []
+  },
+  "ASTR-295": {
+    "courseCode": "ASTR-295",
+    "title": "Independent Study",
+    "department": "ASTR",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "ASTR-330MA": {
+    "courseCode": "ASTR-330MA",
+    "title": "Topics in Planetary Science: 'Mars'",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "ASTR-223 recommended."
+    ],
+    "crossListedAs": []
+  },
+  "ASTR-330MN": {
+    "courseCode": "ASTR-330MN",
+    "title": "Topics in Planetary Science: 'Moon'",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "ASTR-223 recommended but not required."
+    ],
+    "crossListedAs": []
+  },
+  "ASTR-330WR": {
+    "courseCode": "ASTR-330WR",
+    "title": "Topics in Planetary Science: 'Ocean Worlds'",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "ASTR-223"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "ASTR-335": {
+    "courseCode": "ASTR-335",
+    "title": "Astrophysics II",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "ASTR-228"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ASTR-352": {
+    "courseCode": "ASTR-352",
+    "title": "Astrophysics III",
+    "department": "ASTR",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "ASTR-335"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "ASTR-395": {
+    "courseCode": "ASTR-395",
+    "title": "Independent Study",
+    "department": "ASTR",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "BIOCH-295": {
+    "courseCode": "BIOCH-295",
+    "title": "Independent Study",
+    "department": "BIOCH",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Students conducting an independent lab research project for credit in a department, program, or lab covered by the College's chemical hygiene plan must participate in a safety training session before beginning research.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "BIOCH-311": {
+    "courseCode": "BIOCH-311",
+    "title": "Protein Biochemistry and Cellular Metabolism",
+    "department": "BIOCH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-220",
+      "BIOL-230",
+      "CHEM-302",
+      "CHEM-223",
+      "CHEM-231"
+    ],
+    "corequisites": [
+      "BIOCH-318"
+    ],
+    "notes": [
+      "This course is limited to Biochemistry majors only."
+    ],
+    "crossListedAs": []
+  },
+  "BIOCH-312": {
+    "courseCode": "BIOCH-312",
+    "title": "Chemistry of Biomolecules",
+    "department": "BIOCH",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-202"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is NOT intended for Biochemistry majors, who must take BIOCH-311 and BIOCH-314. BIOCH-312 students may take BIOCH-318 concurrently."
+    ],
+    "crossListedAs": [
+      "CHEM-312"
+    ]
+  },
+  "BIOCH-314": {
+    "courseCode": "BIOCH-314",
+    "title": "Nucleic Acids and Molecular Biology",
+    "department": "BIOCH",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOCH-311"
+    ],
+    "corequisites": [
+      "BIOCH-314L"
+    ],
+    "notes": [
+      "This course is limited to Biochemistry majors only."
+    ],
+    "crossListedAs": []
+  },
+  "BIOCH-318": {
+    "courseCode": "BIOCH-318",
+    "title": "Laboratory Techniques in Protein Biochemistry",
+    "department": "BIOCH",
+    "credits": "1",
+    "semester": "Fall",
+    "requirements": [
+      "None"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOCH-311"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOCH-330": {
+    "courseCode": "BIOCH-330",
+    "title": "Topics in Biochemistry and Molecular Biology",
+    "department": "BIOCH",
+    "credits": "",
+    "semester": "",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOCH-330RN": {
+    "courseCode": "BIOCH-330RN",
+    "title": "Topics in Biochemistry and Molecular Biology: 'The RNA World: The Origin of Life to Modern Cells'",
+    "department": "BIOCH",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOCH-311",
+      "BIOCH-314",
+      "BIOCH-312",
+      "CHEM-312"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": [
+      "CHEM-330RN"
+    ]
+  },
+  "BIOCH-395": {
+    "courseCode": "BIOCH-395",
+    "title": "Independent Study",
+    "department": "BIOCH",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "See safety training restrictions in the course description for BIOCH-295.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-145": {
+    "courseCode": "BIOL-145",
+    "title": "Introductory Biology",
+    "department": "BIOL",
+    "credits": "",
+    "semester": "",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-145BT": {
+    "courseCode": "BIOL-145BT",
+    "title": "Introductory Biology: 'Biology Today with Laboratory'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOL-145BTL"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-145EX": {
+    "courseCode": "BIOL-145EX",
+    "title": "Introductory Biology: 'Exploring Biodiversity with Laboratory'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOL-145EXL"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-145GW": {
+    "courseCode": "BIOL-145GW",
+    "title": "Introductory Biology: 'A Green World with Laboratory'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOL-145GWL"
+    ],
+    "notes": [
+      "This course is limited to first-year students."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-145LC": {
+    "courseCode": "BIOL-145LC",
+    "title": "Introductory Biology: 'Locomotion with Laboratory'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOL-145LCL"
+    ],
+    "notes": [
+      "This course is limited to first-years and sophomores."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-160": {
+    "courseCode": "BIOL-160",
+    "title": "Integrated Introduction to Biology and Chemistry with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "CHEM-160",
+      "CHEM-160L"
+    ],
+    "notes": [
+      "This course is limited to first-year students.",
+      "Students must co-enroll in BIOL-160 and CHEM-160 for a total of 8 credits; consisting of three 75-minute lectures, and one three-hour laboratory per week."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-200": {
+    "courseCode": "BIOL-200",
+    "title": "Introductory Biology II: How Organisms Develop with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-145",
+      "BIOL-160",
+      "NEURO-100"
+    ],
+    "corequisites": [
+      "BIOL-200L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-206": {
+    "courseCode": "BIOL-206",
+    "title": "Local Flora with Field Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "None"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-209": {
+    "courseCode": "BIOL-209",
+    "title": "Science Communication",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-210": {
+    "courseCode": "BIOL-210",
+    "title": "Molecular Genetics with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200",
+      "CHEM-150",
+      "CHEM-160"
+    ],
+    "corequisites": [
+      "BIOL-210L"
+    ],
+    "notes": [
+      "Students are not allowed to take this course in the same semester as BIOL-220 Cell Biology. Also, students who previously took BIOL-230 Molecular Genetics and Cell Biology should not enroll in this course."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-220": {
+    "courseCode": "BIOL-220",
+    "title": "Cell Biology with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200",
+      "CHEM-150",
+      "CHEM-160"
+    ],
+    "corequisites": [
+      "BIOL-220L"
+    ],
+    "notes": [
+      "Students may only register for one 200-level Biology core courses (BIOL-220, BIOL-226, and BIOL-241) in the first week of pre-registration. Students are not allowed to take this course in the same semester as BIOL-210 Molecular Genetics. Also, students who previously took BIOL-230 Molecular Genetics and Cell Biology should not enroll in this course."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-223": {
+    "courseCode": "BIOL-223",
+    "title": "Ecology with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-145",
+      "BIOL-160"
+    ],
+    "corequisites": [
+      "BIOL-223L"
+    ],
+    "notes": [
+      "Because the course uses quantitative methods, students must have experience with calculus or statistics; high school level courses are sufficient.",
+      "BIOL-223 and/or BIOL-226 must be taken for the Biology major."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-226": {
+    "courseCode": "BIOL-226",
+    "title": "Evolution: Making Sense of Life with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200"
+    ],
+    "corequisites": [
+      "BIOL-226L"
+    ],
+    "notes": [
+      "Students may only register for one 200-level Biology core courses (BIOL-220, BIOL-226, and BIOL-241) in the first week of pre-registration.",
+      "BIOL-223 and/or BIOL-226 must be taken for the Biology major."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-234": {
+    "courseCode": "BIOL-234",
+    "title": "Biostatistics with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "ENVST-200"
+    ],
+    "corequisites": [
+      "BIOL-234L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-236": {
+    "courseCode": "BIOL-236",
+    "title": "Topics in Biological Sciences",
+    "department": "BIOL",
+    "credits": "",
+    "semester": "",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-236HA": {
+    "courseCode": "BIOL-236HA",
+    "title": "Topics in Biological Sciences: 'Human-Animal Interaction'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "S"
+    ],
+    "prerequisites": [
+      "PSYCH-100"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Writing-Intensive"
+    ],
+    "crossListedAs": [
+      "PSYCH-259HA"
+    ]
+  },
+  "BIOL-241": {
+    "courseCode": "BIOL-241",
+    "title": "Comparative Animal Physiology with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-145",
+      "BIOL-160",
+      "NEURO-100",
+      "BIOL-200"
+    ],
+    "corequisites": [
+      "BIOL-241L"
+    ],
+    "notes": [
+      "Students may only register for one 200-level Biology core courses (BIOL-220, BIOL-226, and BIOL-241) in the first week of pre-registration."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-249": {
+    "courseCode": "BIOL-249",
+    "title": "The Naturalist Habit with Field Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-145",
+      "BIOL-160",
+      "BIOL-200"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Class meetings will consist of weekly field trips to local natural areas, where we will spend most of our time outdoors along with weekly classroom sessions for discussion and student projects. Field trips will proceed in all safe weather (e.g. cold, rain, wind, etc.), and attendance is mandatory. BIOL-249 counts as a 200-level course with a lab."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-295": {
+    "courseCode": "BIOL-295",
+    "title": "Independent Study",
+    "department": "BIOL",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Any student conducting an independent laboratory research project for course credit in a department, program, or laboratory covered by the College's chemical hygiene plan must participate in a safety training session before beginning research.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-307": {
+    "courseCode": "BIOL-307",
+    "title": "Vertebrate Anatomy with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOL-307L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-319": {
+    "courseCode": "BIOL-319",
+    "title": "Immunology with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-210",
+      "BIOL-220"
+    ],
+    "corequisites": [
+      "BIOL-319L"
+    ],
+    "notes": [
+      "This course is open to juniors and seniors",
+      "Interested students with only one of the prerequisites (BIOL-210 or BIOL-220) are invited to email the instructor to discuss whether this class is right for them."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-321": {
+    "courseCode": "BIOL-321",
+    "title": "Conference Course",
+    "department": "BIOL",
+    "credits": "",
+    "semester": "",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-321CM": {
+    "courseCode": "BIOL-321CM",
+    "title": "Conference Course: 'Cellular Microbiology'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-220"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-321EG": {
+    "courseCode": "BIOL-321EG",
+    "title": "Conference Course: 'Eukaryotic Molecular Genetics'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200",
+      "BIOL-210",
+      "BIOL-220"
+    ],
+    "corequisites": [],
+    "notes": [
+      "In place of a lab, each student will do a semester-long project involving literature research."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-321EU": {
+    "courseCode": "BIOL-321EU",
+    "title": "Conference Course: 'The Neuron'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-210",
+      "BIOL-220",
+      "NEURO-100"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-321HG": {
+    "courseCode": "BIOL-321HG",
+    "title": "Conference Course: 'Molecular Genetics and Human Genetic Disorders'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200",
+      "BIOL-210",
+      "BIOL-220",
+      "BIOL-230"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-321PB": {
+    "courseCode": "BIOL-321PB",
+    "title": "Conference Course: 'Plant Biogeography'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-321VX": {
+    "courseCode": "BIOL-321VX",
+    "title": "Conference Course: 'Outsmarting Pathogens'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-230",
+      "BIOL-210",
+      "BIOL-220"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-322": {
+    "courseCode": "BIOL-322",
+    "title": "Comparative Biomechanics",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-323": {
+    "courseCode": "BIOL-323",
+    "title": "Plant Growth and Development",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-325": {
+    "courseCode": "BIOL-325",
+    "title": "Plant Diversity and Evolution",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Offered alternate years."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-327": {
+    "courseCode": "BIOL-327",
+    "title": "Microbiology with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-210",
+      "BIOL-220",
+      "BIOL-230"
+    ],
+    "corequisites": [
+      "BIOL-327L"
+    ],
+    "notes": [
+      "This course is open to juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-328": {
+    "courseCode": "BIOL-328",
+    "title": "Human Physiology with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-210",
+      "BIOL-220",
+      "BIOCH-311"
+    ],
+    "corequisites": [
+      "BIOL-328L"
+    ],
+    "notes": [
+      "This course is open to juniors and seniors"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-331": {
+    "courseCode": "BIOL-331",
+    "title": "Conservation Biology",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-223",
+      "BIOL-226",
+      "BIOL-315",
+      "ENVST-200"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-333": {
+    "courseCode": "BIOL-333",
+    "title": "Neurobiology with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-210",
+      "BIOL-230"
+    ],
+    "corequisites": [
+      "BIOL-333L"
+    ],
+    "notes": [
+      "This course is open to juniors and seniors",
+      "Preference given to seniors."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-337": {
+    "courseCode": "BIOL-337",
+    "title": "Symbiotic Interactions",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-223",
+      "BIOL-226"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-340": {
+    "courseCode": "BIOL-340",
+    "title": "Eukaryotic Molecular Genetics with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200",
+      "BIOL-210",
+      "BIOL-220"
+    ],
+    "corequisites": [
+      "BIOL-340L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-342": {
+    "courseCode": "BIOL-342",
+    "title": "Extreme Life",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-343": {
+    "courseCode": "BIOL-343",
+    "title": "Substance Use Disorder: Addiction and Drug Memory Formation with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200",
+      "BIOL-210",
+      "BIOL-220",
+      "BIOL-230"
+    ],
+    "corequisites": [
+      "BIOL-343L"
+    ],
+    "notes": [
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-344": {
+    "courseCode": "BIOL-344",
+    "title": "Inquiries in Behavioral Ecology with Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOL-344L"
+    ],
+    "notes": [
+      "BIOL-223 or BIOL-226 strongly recommended.",
+      "Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-346": {
+    "courseCode": "BIOL-346",
+    "title": "The Diverse Biology of Sex",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-223",
+      "BIOL-226"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Students from non-biology majors are welcome to contact the instructor to seek permission to enroll."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-347": {
+    "courseCode": "BIOL-347",
+    "title": "Local Community Ecology with Field Laboratory",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-223",
+      "BIOL-226"
+    ],
+    "corequisites": [
+      "BIOL-347L"
+    ],
+    "notes": [
+      "Outdoor lab during winter -- please dress appropriately. BIOL-321CE counts as a 300-level course with lab."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-348": {
+    "courseCode": "BIOL-348",
+    "title": "Invasion Ecology",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-200",
+      "BIOL-223",
+      "BIOL-226",
+      "ENVST-200"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-349": {
+    "courseCode": "BIOL-349",
+    "title": "Advances in Gene Therapy",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-210",
+      "BIOL-230"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-350": {
+    "courseCode": "BIOL-350",
+    "title": "Topics in Biological Sciences",
+    "department": "BIOL",
+    "credits": "",
+    "semester": "",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-350DB": {
+    "courseCode": "BIOL-350DB",
+    "title": "Topics in Biological Sciences: 'Developmental Biology with Laboratory'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-210",
+      "BIOL-220"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-350GE": {
+    "courseCode": "BIOL-350GE",
+    "title": "Topics in Biological Sciences: 'Genomics and Bioinformatics with Laboratory'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOL-350GEL"
+    ],
+    "notes": [
+      "BIOL-230, BIOL-210, or BIOL-226 strongly recommended. If you believe you have taken equivalent courses in other departments, please contact the instructor for permission."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-350SE": {
+    "courseCode": "BIOL-350SE",
+    "title": "Topics in Biological Sciences: 'Stream Ecology: Keeping Up with Running Water with Laboratory'",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-352": {
+    "courseCode": "BIOL-352",
+    "title": "Molecular Ecology",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOL-230",
+      "BIOL-210",
+      "BIOL-223",
+      "BIOL-226"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-353": {
+    "courseCode": "BIOL-353",
+    "title": "Pregnancy and the Placenta",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "This course is open to juniors and seniors",
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-354": {
+    "courseCode": "BIOL-354",
+    "title": "Race and Biology",
+    "department": "BIOL",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "BIOL-395": {
+    "courseCode": "BIOL-395",
+    "title": "Independent Study",
+    "department": "BIOL",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "See safety training restrictions in description of BIOL-295.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "BIOL-399": {
+    "courseCode": "BIOL-399",
+    "title": "Biology Journal Club/Data Hub",
+    "department": "BIOL",
+    "credits": "1",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "None"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Repeatable for credit. Credit/no credit grading only. Reading materials will be drawn primarily from research and review articles in the primary scientific literature. Data will be presented by students actively engaged in research projects. We will discuss data and readings as a group in class meetings."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-150": {
+    "courseCode": "CHEM-150",
+    "title": "General Chemistry: Foundations",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Fall and Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "CHEM-150L"
+    ],
+    "notes": [
+      "This course is offered in both fall and spring semesters."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-160": {
+    "courseCode": "CHEM-160",
+    "title": "Integrated Introduction to Biology and Chemistry",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [
+      "BIOL-160",
+      "CHEM-160L"
+    ],
+    "notes": [
+      "This course is limited to first-year students.",
+      "Students must co-enroll in BIOL-160 and CHEM-160 for a total of 8 credits; three 50 minute lectures, three 75-minute lectures, and one three-hour laboratory per week."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-199": {
+    "courseCode": "CHEM-199",
+    "title": "Introduction to Research",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "None"
+    ],
+    "prerequisites": [
+      "CHEM-150",
+      "CHEM-160"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Interested students should complete the online application.",
+      "This course is limited to first-year students.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-202": {
+    "courseCode": "CHEM-202",
+    "title": "Organic Chemistry I",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-150",
+      "CHEM-160",
+      "CHEM-101",
+      "CHEM-201"
+    ],
+    "corequisites": [
+      "CHEM-202L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-211": {
+    "courseCode": "CHEM-211",
+    "title": "Environmental Chemistry",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-150",
+      "CHEM-160"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-223": {
+    "courseCode": "CHEM-223",
+    "title": "Chemical Measurement and Analysis",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-150",
+      "CHEM-160"
+    ],
+    "corequisites": [
+      "CHEM-223L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-231": {
+    "courseCode": "CHEM-231",
+    "title": "Inorganic Chemistry",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-150",
+      "CHEM-160"
+    ],
+    "corequisites": [
+      "CHEM-231L"
+    ],
+    "notes": [
+      "MATH-101 recommended."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-291": {
+    "courseCode": "CHEM-291",
+    "title": "Scientific Illustration and Data Visualization",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-295": {
+    "courseCode": "CHEM-295",
+    "title": "Independent Study",
+    "department": "CHEM",
+    "credits": "1-4",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "Students conducting an independent laboratory research project for course credit in a department, program, or laboratory covered by the College's chemical hygiene plan must participate in a safety training session before beginning research.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-302": {
+    "courseCode": "CHEM-302",
+    "title": "Organic Chemistry II",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-202"
+    ],
+    "corequisites": [
+      "CHEM-302L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-306": {
+    "courseCode": "CHEM-306",
+    "title": "Analytical Chemistry",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-231"
+    ],
+    "corequisites": [
+      "CHEM-306L"
+    ],
+    "notes": [
+      "Speaking-Intensive, Writing-Intensive"
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-308": {
+    "courseCode": "CHEM-308",
+    "title": "Chemical Thermodynamics with Lab",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "MATH-203",
+      "CHEM-223",
+      "CHEM-231"
+    ],
+    "corequisites": [
+      "CHEM-308L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-309": {
+    "courseCode": "CHEM-309",
+    "title": "Introduction to Materials",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-231",
+      "CHEM-202",
+      "MATH-101"
+    ],
+    "corequisites": [
+      "CHEM-309L"
+    ],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-312": {
+    "courseCode": "CHEM-312",
+    "title": "Chemistry of Biomolecules",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-202"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is NOT intended for Biochemistry majors, who must take BIOCH-311 and BIOCH-314. CHEM-312 students may take BIOCH-318 concurrently."
+    ],
+    "crossListedAs": [
+      "BIOCH-312"
+    ]
+  },
+  "CHEM-320": {
+    "courseCode": "CHEM-320",
+    "title": "Introduction to Nanoscience and Technology",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-202",
+      "MATH-101",
+      "CHEM-231",
+      "CHEM-223"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-324": {
+    "courseCode": "CHEM-324",
+    "title": "Atomic and Molecular Structure",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "MATH-203",
+      "PHYS-205",
+      "CHEM-231"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-325": {
+    "courseCode": "CHEM-325",
+    "title": "Atomic and Molecular Structure with Lab",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "MATH-203",
+      "PHYS-205",
+      "CHEM-231"
+    ],
+    "corequisites": [
+      "CHEM-325L"
+    ],
+    "notes": [
+      "MATH-203 is recommended."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-326": {
+    "courseCode": "CHEM-326",
+    "title": "Poisons: Death by Chemistry",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-329": {
+    "courseCode": "CHEM-329",
+    "title": "Cosmetic Chemistry",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-302"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-330": {
+    "courseCode": "CHEM-330",
+    "title": "Advanced Topics in Chemistry",
+    "department": "CHEM",
+    "credits": "",
+    "semester": "",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-330RN": {
+    "courseCode": "CHEM-330RN",
+    "title": "Advanced Topics in Chemistry: 'The RNA World: The Origin of Life to Modern Cells'",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "BIOCH-311",
+      "BIOCH-314",
+      "CHEM-312"
+    ],
+    "corequisites": [],
+    "notes": [
+      "Speaking-Intensive"
+    ],
+    "crossListedAs": [
+      "BIOCH-330RN"
+    ]
+  },
+  "CHEM-334": {
+    "courseCode": "CHEM-334",
+    "title": "Advanced Inorganic Chemistry",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-231"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-336": {
+    "courseCode": "CHEM-336",
+    "title": "Organic Synthesis",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Fall",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-302"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-339": {
+    "courseCode": "CHEM-339",
+    "title": "Biological Organic Chemistry",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-302"
+    ],
+    "corequisites": [],
+    "notes": [
+      "This course is limited to Biochemistry and Chemistry majors only.; This course is limited to seniors."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-346": {
+    "courseCode": "CHEM-346",
+    "title": "Physical Chemistry of Biochemical Systems with Lab",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Spring",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "MATH-203",
+      "PHYS-205",
+      "CHEM-231",
+      "CHEM-306"
+    ],
+    "corequisites": [
+      "CHEM-346L"
+    ],
+    "notes": [
+      "This course is limited to Biochemistry and Chemistry majors only."
+    ],
+    "crossListedAs": []
+  },
+  "CHEM-349": {
+    "courseCode": "CHEM-349",
+    "title": "Food Chemistry: The Science of the Kitchen",
+    "department": "CHEM",
+    "credits": "4",
+    "semester": "Not Scheduled for This Year",
+    "requirements": [
+      "MS"
+    ],
+    "prerequisites": [
+      "CHEM-302"
+    ],
+    "corequisites": [],
+    "notes": [],
+    "crossListedAs": []
+  },
+  "CHEM-395": {
+    "courseCode": "CHEM-395",
+    "title": "Independent Study",
+    "department": "CHEM",
+    "credits": "1-8",
+    "semester": "Fall and Spring",
+    "requirements": [],
+    "prerequisites": [],
+    "corequisites": [],
+    "notes": [
+      "Contact instructor for independent study declaration form and signatures.",
+      "See safety training restrictions in description of CHEM-295.",
+      "Instructor permission required."
+    ],
+    "crossListedAs": []
+  }
+}
