@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+<<<<<<< Updated upstream
     //find the all the <select> labels under optiona-field
 const selects = document.querySelectorAll(".optional-field select");
 // for each select in selects
@@ -18,9 +19,34 @@ selects.forEach(select => {
         } else {
             label.style.color = '#888';
             if (symbol) {
-                symbol.style.color = '#000';
+                symbol.style.color = '#888';
             }
         }
     });
 });
+
+form.addEventListener('submit', (event) => {
+    const m1 = major1Select.value;
+    const m2 = major2Select.value;
+    const mi = minorSelect.value;
+
+    if (m2 && m1) {
+        event.preventDefault();
+        alert("You can only choose a second major OR a minor");
+    }
+
+    if (m2 && m1 == m2) {
+        event.preventDefault();
+        alert("Your Second Major must be different from your first Major.");
+        return;
+    }
+
+    if (mi && m1 == mi) {
+        event.preventDefault();
+        alert("Your Minor must be different from your first Major.");
+        return;
+    }
+    
+});
+
 });
