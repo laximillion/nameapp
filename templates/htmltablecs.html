@@ -1,0 +1,4301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Degree Tracker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='HtmlTableCS.css') }}">
+</head>
+
+<body>
+  <div class="container">
+
+    <h2>Selected programs</h2>
+    <ul>
+      {% for item in selected_items %}
+      <li>{{ item.name }} {{ item.type }}</li>
+      {% endfor %}
+    </ul>
+    <div id="Africana Major">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Africana Studies Major</th>
+        </tr>
+
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CRPE-200</td>
+          <td>Foundations of Africana Studies</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-205</td>
+          <td>Social Justice in Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 16 credits at the 300 level from the approved course list of Africana Studies
+            in at least 2 different disciplines. Only 4 credits can be CRPE-395.
+          </td>
+          <td>4 different classes in at least 2 different disciplines at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>16 credits of additional courses from the approved course list for Africana Studies</td>
+          <td>4 Africana Studies classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Anthropology Major" class="{% if major == 'ANTHR' %}active-major{% endif %}">
+      <table style="width:60%">
+
+        <tr>
+          <th colspan="3">Anthropology Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ANTHR-105</td>
+          <td>
+            <p value="COMSC-151">Introduction to Cultural Anthropology</p>
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ANTHR-235</td>
+          <td>
+            <p value="COMSC-151">History of Anthropological Thought</p>
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ANTHR-275</td>
+          <td>Research Methods in Cultural Anthropology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ANTHR-350</td>
+          <td>Issues in Contemporary Anthropological Theory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One cultural area course in anthropology OR a community-based learning (CBL) course in anthropology other
+            than ANTHR-275</td>
+          <td>One cultural area class in anthropology OR a community-based learning (CBL) class in anthropology other
+            than
+            ANTHR-275</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in Anthropology</td>
+          <td>One Anthropology class</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits at the 300 level</td>
+          <td>2 classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Anthropology Minor" class="{% if minor == 'ANTHR' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Anthropology Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ANTHR-105</td>
+          <td>
+            <p value="COMSC-151">Introduction to Cultural Anthropology</p>
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 credits in Anthropology</td>
+          <td>One Anthropology class</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 additional credits above the 100 level</td>
+          <td>3 classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Arabic Minor">
+      <table style="width:60%">
+
+        <tr>
+          <th colspan="3">Arabic Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two Arabic language courses at the 200 level or higher</td>
+          <td>Two Arabic classes at the 200 level or higher</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>An additional two 300-level courses in the Arabic language</td>
+          <td>2 Arabic classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div id="Arch Major" class="{% if major == 'ARCH' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Architectural Studies Major</th>
+        </tr>
+        <tr>
+          <td colspan="3">Those majoring in Architectural Studies are not eligible to major or minor in Art History</td>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Art Studio: one approved art studio course at the 100 level, such as:</td>
+          <td>ARTST-120: Drawing I</td>
+          <td>ARTST-131: Art Studio Foundations</td>
+          <td>ARTST-142: Digital Art Foundations</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Art History: one approved art history survey course with significant architectural content, such as:</td>
+          <td>ARTH-101: The Built Environment</td>
+          <td>ARTH-102: Art and Architecture in the Premodern World</td>
+          <td>ARTH-103: Western Art: 1400-2000</td>
+          <td>ARTH-105: Arts of Asia</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Design Studio: 4 credits in approved foundation architectural design studio courses (taken at Mount
+            Holyoke
+            or through the Five College Interchange), such as:</td>
+          <td>Mount Holyoke: ARCH-205AD: Introduction to Architecture: 'Design'</td>
+          <td>Amherst: ARCH-105: Space and Design</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One approved 200-level course in architectural history or an art history course with significant
+            architectural content, such as:</td>
+          <td>ARTH-232RM: Renaissance Cities: 'Rome'</td>
+          <td>ARTH-233: Italian Renaissance Architecture</td>
+          <td>ARTH-236: The Global Renaissance</td>
+          <td>ARTH-290RC: Issues in Art History: 'Medieval Architecture'</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ARCH-225ED</td>
+          <td>Intermediate Studies in Architecture: 'Environmental Principles'</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Hampshire: HACU-275</td>
+          <td>Digital Architecture Studio</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits at the 200 level in area of concentration, as approved by the advisor. These may be courses in
+            architectural studies, art history, art studio, environmental studies, geography, politics, etc.</td>
+          <td>4 classes at the 200 level (must be approved by advisor)</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits at the 300 level in area of concentration such as architectural design, the history and/or
+            theory
+            of art or architecture</td>
+          <td>Mount Holyoke: ARCH-311: Design-Build Studio</td>
+          <td>Mount Holyoke: ARTH-300MY: Seminar: 'Building After Rome: Early Medieval Architecture'</td>
+          <td>Mount Holyoke: ARTH-302RM: Great Cities: 'Rome, the Eternal City'</td>
+          <td>Mount Holyoke: ARTH-352LW: Topics in Modern and Contemporary Architecture: 'Spaces of Law'</td>
+          <td>Mount Holyoke: ARCH-395: Independent Study</td>
+          <td>UMass: ARCH-403: Design V Studio</td>
+          <td>UMass: ARCH-404: Design-Build Studio</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Arch Minor" class="{% if minor == 'ARCH' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Architectural Studies Minor</th>
+        </tr>
+        <tr>
+          <td colspan="3">Those majoring in Art History are not eligible to minor in Architectural Studies</td>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Art Studio: one approved art studio course at the 100 level, such as:</td>
+          <td>ARTST-120: Drawing I</td>
+          <td>ARTST-131: Art Studio Foundations</td>
+          <td>ARTST-142: Digital Art Foundations</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Art History: one approved art history survey course with significant architectural content, such as:</td>
+          <td>ARTH-101: The Built Environment</td>
+          <td>ARTH-102: Art and Architecture in the Premodern World</td>
+          <td>ARTH-103: Western Art: 1400-2000</td>
+          <td>ARTH-105: Arts of Asia</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Design Studio: 4 credits in approved foundation architectural design studio courses (taken at Mount
+            Holyoke
+            or through the Five College Interchange), such as:</td>
+          <td>Mount Holyoke: ARCH-205AD: Introduction to Architecture: 'Design'</td>
+          <td>Amherst: ARCH-105: Space and Design</td>
+          <td>Smith: ARS-280: Introduction to Architectural Design: Analog</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three approved electives in art history, art studio, or architectural design at the 200 or 300 level</td>
+          <td>Three approved elective classes in art history, art studio, or architectural design at the 200 or 300
+            level
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="ArtHist Major" class="{% if major == 'ARTH' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Art History Major</th>
+        </tr>
+        <tr>
+          <td colspan="3">Those majoring in Art history may not major or minor in Architectural Studies.</td>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 200 level in the Ancient and Medieval area</td>
+          <td>One class at the 200 level in the Ancient and Medieval area</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 200 level in the Renaissance and Baroque area</td>
+          <td>One class at the 200 level in the Renaissance and Baroque area</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 200 level in the Modern and American area</td>
+          <td>One class at the 200 level in the Modern and American area</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 200 level in the non-Western area</td>
+          <td>One class at the 200 level in the non-Western area</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two courses at the 300 level not including ARTH-395</td>
+          <td>Two classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three additional courses at any level</td>
+          <td>3 classes at any level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course from another department or program that is chosen in consultation with an art history advisor,
+            after the declaration of major</td>
+          <td>One class from another department or program</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+      </table>
+    </div>
+
+
+    <div id="ArtHist Minor" class="{% if minor == 'ARTH' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Art History Minor</th>
+        </tr>
+
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 100-level art history course</td>
+          <td>One art history class at the 100 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Any four courses in art history at the 200 level or above</td>
+          <td>4 classes in art history at or above the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="ArtStudio Major" class="{% if major == 'ARTST' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Art Studio Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of three:</td>
+          <td>ARTST-120: Drawing I</td>
+          <td>ARTST-131: Art Studio Foundations</td>
+          <td>ARTST-142: Digital Art Foundations</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Five courses in art studio at the 200 level</td>
+          <td>5 classes in art studio at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits in art history at any level</td>
+          <td>2 art history classes at any level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three courses (12 credits) at the 300 level as follows:</td>
+          <td>Spring Junior Year: ARTST-330: Junior Studio</td>
+          <td>Fall Senior Year: ARTST-395SS: Senior Studio</td>
+          <td>Spring Senior Year: ARTST-390: Advanced Studio (non-thesis students) OR ARTST-395SS: Senior Studio (thesis
+            students)</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="ArtStudio Minor" class="{% if minor == 'ARTST' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Art Studio Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of three:</td>
+          <td>ARTST-120: Drawing I</td>
+          <td>ARTST-131: Art Studio Foundations</td>
+          <td>ARTST-142: Digital Art Foundations</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four courses in art studio at the 200 level</td>
+          <td>4 classes in art studio at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Asian Minor" class="{% if minor == 'ASIAN' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Asian Studies Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits of approved Asian studies courses at the 200 level or higher, only 8 of which can be in
+            language
+          </td>
+          <td>3 Asian studies classes at the 200 level or higher, at least 1 has to be out of language</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits in approved Asian studies courses at the 300 level.</td>
+          <td>At least 1 approved Asian studies class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Astro Major" class="{% if major == 'ASTR' %}active-major{% endif %}">
+      <table style="width:60%">
+
+        <tr>
+          <th colspan="3">Astronomy Major</th>
+        </tr>
+
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of following:</td>
+          <td>ASTR-100: Stars and Galaxies</td>
+          <td>ASTR-102: </td>
+          <td>ASTR-104: Planet Earth</td>
+          <td>ASTR-105: The Sky</td>
+          <td>PHYS-201: Electromagnetism</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two astronomy courses at the 200 level (8 credits) from the offerings of the Five College Astronomy
+            department</td>
+          <td>2 astronomy classes at the 200 level from the Five College Astronomy departments</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One astronomy course at the 300 level (4 credits) from the offerings of the Five College Astronomy
+            department</td>
+          <td>1 astronomy class at the 300 level from the Five College Astronomy departments</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional courses at the 300 level, in astronomy or a related field such as mathematics, physics,
+            geology, biology, computer science, or the history or philosophy of science</td>
+          <td>2 classes in approved subjects at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One additional course at any level in astronomy or a related field such as mathematics, physics, geology,
+            biology, computer science, or the history or philosophy of science</td>
+          <td>1 class in an approved subject</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div id="Astro Minor" class="{% if minor == 'ASTR' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Astronomy Minor</th>
+        </tr>
+
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 300-level astronomy, physics, or geology course</td>
+          <td>One class at the 300 level in an approved subject</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three additional 200-level or 300-level courses in astronomy</td>
+          <td>3 astronomy classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div id="BioChem Major" class="{% if major == 'BIOCH' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Biochemistry Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Declaring this major automatically fulfills the college's outside the major requirement</th>
+        </tr>
+
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CHEM-150: General Chemistry: Foundations</td>
+          <td>CHEM-160: Integrated Introduction to Biology and Chemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CHEM-202</td>
+          <td>Organic Chemistry I</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CHEM-302</td>
+          <td>Organic Chemistry II</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CHEM-223</td>
+          <td>Chemical Measurement and Analysis</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CHEM-308: Chemical Thermodynamics with Lab</td>
+          <td>CHEM-346: Physical Chemistry of Biochemical Systems with Lab</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following</td>
+          <td>BIOL-145: Introductory Biology</td>
+          <td>BIOL-160: Integrated Introduction to Biology and Chemistry with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>BIOL-200</td>
+          <td>Introductory Biology II: How Organisms Develop with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>BIOL-220</td>
+          <td>Cell Biology with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>BIOCH-311</td>
+          <td>Protein Biochemistry and Cellular Metabolism</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>BIOCH-318</td>
+          <td>Laboratory Techniques in Protein Biochemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>BIOCH-314</td>
+          <td>Nucleic Acids and Molecular Biology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits elected from 300-level courses in biochemistry, biology, or chemistry</td>
+          <td>2 classes at the 300 level in approved subjects</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>All seniors must give an oral presentation on a biochemical topic in the Senior Symposium</td>
+          <td>1 oral presentation at the senior symposium on a biochemical topic</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div id="Bio Major" class="{% if major == 'BIOL' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Biological Sciences Major</th>
+        </tr>
+        <tr>
+          <td colspan="3">A total of six Biological Sciences courses are required to be taken with labs</td>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following</td>
+          <td>BIOL-145: Introductory Biology</td>
+          <td>BIOL-160: Integrated Introduction to Biology and Chemistry with Laboratory</td>
+          <td>NEURO-100: Introduction to Neuroscience and Behavior</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>BIOL-200</td>
+          <td>Introductory Biology II: How Organisms Develop with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>BIOL-210: Molecular Genetics with Laboratory</td>
+          <td>BIOL-220: Cell Biology with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>BIOL-223: Ecology with Laboratory</td>
+          <td>BIOL-226: Evolution: Making Sense of Life with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following (that has not been previously taken):</td>
+          <td>BIOL-210: Molecular Genetics with Laboratory</td>
+          <td>BIOL-220: Cell Biology with Laboratory</td>
+          <td>BIOL-223: Ecology with Laboratory</td>
+          <td>BIOL-226: Evolution: Making Sense of Life with Laboratory</td>
+          <td>BIOL-241: Comparative Animal Physiology with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One elective course at the 200 or 300 level in Biological Sciences</td>
+          <td>1 biological sciences elective class at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two elective courses at the 300 level in Biological Sciences</td>
+          <td>2 biological sciences elective classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CHEM-150: General Chemistry: Foundations</td>
+          <td>CHEM-160: Integrated Introduction to Biology and Chemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course in either calculus or statistics</td>
+          <td>1 class in either calculus or statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div id="Bio Minor" class="{% if minor == 'BIOL' %}active-minor{% endif %}">
+      <table style="width:60%">
+
+        <tr>
+          <th colspan="3">Biological Sciences Minor</th>
+        </tr>
+
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>16 credits in Biological Sciences at the 200 and/or 300 level</td>
+          <td>4 classes in biological sciences taken at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Chem Major" class="{% if major == 'CHEM' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Chemistry Major</th>
+        </tr>
+        <tr>
+          <td colspan="3">If a student is taking CHEM-395, they must give an oral presentation at the Senior Symposium
+          </td>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CHEM-150: General Chemistry: Foundations</td>
+          <td>CHEM-160: Integrated Introduction to Biology and Chemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CHEM-202</td>
+          <td>Organic Chemistry I</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CHEM-223: Chemical Measurement and Analysis</td>
+          <td>CHEM-306: Analytical Chemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CHEM-231</td>
+          <td>Inorganic Chemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CHEM-308</td>
+          <td>Chemical Thermodynamics with Lab</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in chemistry at the 300 level</td>
+          <td>1 chemistry class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in chemistry at any level </td>
+          <td>1 chemistry class at any level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CHEM-309: Introduction to Materials</td>
+          <td>CHEM-312: Chemistry of Biomolecules</td>
+          <td>CHEM-329: Cosmetic Chemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-101</td>
+          <td>Calculus I</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-102</td>
+          <td>Calculus II</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-203</td>
+          <td>Calculus III</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Chem Minor" class="{% if minor == 'CHEM' %}active-minor{% endif %}">
+      <table style="width:60%">
+
+        <tr>
+          <th colspan="3">Chemistry Minor</th>
+        </tr>
+
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 12 credits in chemistry at the 200 level or above</td>
+          <td>At least 3 chemistry classes at the 200 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits in chemistry at the 300 level</td>
+          <td>At least 1 chemistry class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+      </table>
+    </div>
+
+    <div id="Chinese Minor" class="{% if minor == 'ASIAN' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Chinese Minor</th>
+        </tr>
+        <tr>
+          <td colspan="3">Courses taught in English do not count towards the minor</td>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two Chinese language courses at the 200 level or higher</td>
+          <td>2 Chinese classes at the 200 level or higher</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>An additional two 300-level courses in Chinese language courses</td>
+          <td>2 more Chinese classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="ClassicsStudies Major" class="{% if major == 'CLAS' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Classical Studies Major</th>
+        </tr>
+
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two courses at the 300-level in Classical Studies</td>
+          <td>2 classics classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Six additional courses at the 200-level or above in Classical Studies</td>
+          <td>6 classics classes at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One approved course in the literary/mythological subject area</td>
+          <td>1 class in literary or mythological subjects</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One approved course in the art historical/archeological subject area</td>
+          <td>One approved course in the art historical or archeological subject</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One approved course in the historical subject area</td>
+          <td>1 class in historical subjects</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One additional language course in Latin (CLAS-102 or above) or Greek (CLAS-112 or above)</td>
+          <td>1 Latin or Greek class</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div id="ClassicsStudies Minor" class="{% if minor == 'CLAS' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Classical Studies Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 300 level in Classical Studies</td>
+          <td>1 classics class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three additional courses at the 200 level or above in Classical Studies</td>
+          <td>3 classics classes at the 200 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="CompSci Major" class="{% if major == 'COMSC' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Computer Science Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-151</td>
+          <td>COMSC-151</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-205</t>
+          <td>COMSC-205</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-221</td>
+          <td>COMSC-221</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-225</td>
+          <td>COMSC-225</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-312</td>
+          <td>COMSC-312</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-322</td>
+          <td>COMSC-322</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-232</td>
+          <td>MATH-232</t>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One additional course at the 200 or 300 level</td>
+          <td>
+            <p>200 lvls:</p>
+            <p><input type="checkbox" value="200/300" onchange="switchStatusCheck()">COMSC-235</p>
+            <p><input type="checkbox" value="200/300">COMSC-243GP</p>
+            <p><input type="checkbox" value="200/300"> COMSC-243HR</p>
+            <p><input type="checkbox" value="200/300">COMSC-243PC</p>
+            <p><input type="checkbox" value="200/300">COMSC-243ST</p>
+            <p><input type="checkbox" value="200/300">COMSC-295</p><br><br>
+          </td>
+          <td>
+            <p>300 lvls:</p>
+            <p><input type="checkbox" value="300">COMSC-311</p>
+            <p><input type="checkbox" value="300">COMSC-334</p>
+            <p><input type="checkbox" value="300">COMSC-335</p>
+            <p><input type="checkbox" value="300">COMSC-341CD</p>
+            <p><input type="checkbox" value="300">COMSC-341DV</p>
+            <p><input type="checkbox" value="300">COMSC-341NL</p>
+            <p><input type="checkbox" value="300">COMSC-341RP</p>
+            <p><input type="checkbox" value="300">COMSC-341TE</p>
+            <p><input type="checkbox" value="300">COMSC-395</p>
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional courses at the 300 level</td>
+          <td vertical-align: top>300 lvls:<br>
+            <p><input type="checkbox"> COMSC-311<br>
+              <input type="checkbox"> COMSC-334<br>
+              <input type="checkbox"> COMSC-335<br>
+              <input type="checkbox"> COMSC-341CD<br>
+              <input type="checkbox"> COMSC-341DV<br>
+              <input type="checkbox"> COMSC-341NL<br>
+              <input type="checkbox"> COMSC-341RP<br>
+              <input type="checkbox"> COMSC-341TE<br>
+              <input type="checkbox"> COMSC-395
+            </p>
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="CompSci Minor" class="{% if minor == 'COMSC' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Computer Science Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-151</td>
+          <td>Introduction to Computational Problem Solving</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-205</td>
+          <td>Data Structures</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-225</td>
+          <td>Software Design and Development</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course in computer science at the 200 or 300 level</td>
+          <td>1 computer science class at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course in computer science at the 300 level</td>
+          <td>1 computer science class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="CRPEOne Major" class="{% if major == 'CRPE' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Critical Race and Political Economy (CRPE) Major: CRPE Pathway</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CRPE-180: Introduction to Latinx Studies: Structural Inequalities</td>
+          <td>CRPE-200: Foundations of Africana Studies</td>
+          <td>CRPE-205: Foundations in Critical Social Thought</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 8 credits at the 200 level from the approved course list for People, Power, Place</td>
+          <td>2 classes in People, Power, Place at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 8 credits at the 200 level from the approved course list for Representation</td>
+          <td>2 classes in Representation at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits in CRPE at the 300 level</td>
+          <td>3 CRPE classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits in CRPE at any level</td>
+          <td>2 CRPE classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="CRPE-CST Major" class="{% if major == 'CRPE' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Critical Race and Political Economy (CRPE) Major: Critical Social Thought Pathway</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CRPE-205</td>
+          <td>Foundations in Critical Social Thought</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits at the 200 level from the approved course list for People, Power, Place</td>
+          <td>1 class in People, Power, Place at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits at the 200 level from the approved course list for Representation</td>
+          <td>1 class in Representation at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits in CST at the 200 level</td>
+          <td>2 CST classes at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits in CST at the 300 level</td>
+          <td>2 CST classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CRPE-392</td>
+          <td>Senior Seminar</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits in CST at any level</td>
+          <td>2 CST classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="CRPE-Africana Major" class="{% if major == 'CRPE' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Critical Race and Political Economy (CRPE) Major: Africana Studies Pathway</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CRPE-200</td>
+          <td>Foundations of Africana Studies</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits at the 200 level from the approved course list for People, Power, Place</td>
+          <td>1 class in People, Power, Place at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits at the 200 level from the approved course list for Representation</td>
+          <td>1 class in Representation at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits in Africana Studies at the 200 level </td>
+          <td>2 Africana Studies classes at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits in Africana Studies at the 300 level </td>
+          <td>3 Africana Studies classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits in Africana Studies at any level</td>
+          <td>2 Africana Studies classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="CRPEOne Minor" class="{% if minor == 'CRPE' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Critical Race and Political Economy (CRPE) Minor: CRPE Pathway</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CRPE-180: Introduction to Latinx Studies: Structural Inequalities</td>
+          <td>CRPE-200: Foundations of Africana Studies</td>
+          <td>CRPE-205: Foundations in Critical Social Thought</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits at the 200 level from the approved course list for People, Power, Place</td>
+          <td>1 class in People, Power, Place at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits at the 200 level from the approved course list for Representation</td>
+          <td>1 class in Representation at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four additional credits at the 200 level from the approved course list for People, Power, Place or
+            Representation</td>
+          <td>1 class in either People, Power, Place or Representation at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four credits in CRPE at the 300 level</td>
+          <td>1 CRPE class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div id="CRPE-Africana Minor" class="{% if minor == 'CRPE' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Critical Race and Political Economy (CRPE) Minor: Africana Studies Pathway</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CRPE-200</td>
+          <td>Foundations of Africana Studies</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Twelve credits at the 200 level or higher from the approved course list for Africana Studies</td>
+          <td>3 Africana Studies classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four credits at the 300 level from the approved course list for Africana Studies</td>
+          <td>1 Africana Studies class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="CRPE-Latinx Minor" class="{% if minor == 'CRPE' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Critical Race and Political Economy (CRPE) Minor: Latinx Pathway</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CRPE-180</td>
+          <td>Introduction to Latinx Studies: Structural Inequalities</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one course at the 300 level from the approved course list for Latinx Studies</td>
+          <td>1 Latinx Studies class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three other courses at the 200 or 300 level from the approved course list for Latinx Studies</td>
+          <td>3 Latinx classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Dance Major" class="{% if major == 'DANCE' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Dance Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>DANCE-151</td>
+          <td>Composition I</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>DANCE-252</td>
+          <td>Composition II</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>DANCE-390</td>
+          <td>Advanced Seminar in Research, Choreography and Production (2 cr fall and 2 cr spring)</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>3 of the following 4 categories</td>
+          <td>
+            <table>
+              <tr style="background-color: #FFD1DC;">
+                <td>Music for Dance: One of the following:</t>
+                <td>DANCE-287: Rhythmic Analysis</td>
+                <td>DANCE-387: Rhythmic Analysis II: Performance</td>
+              </tr>
+              <tr style="background-color: #FFD1DC;">
+                <td>Dance & Culture</td>
+                <td>DANCE-272: Dance and Culture</td>
+              </tr>
+              <tr style="background-color: #FFD1DC;">
+                <td>Dance History:</td>
+                <td>DANCE-171: Studies in Dance History</td>
+              </tr>
+              <tr style="background-color: #FFD1DC;">
+                <td>Scientific Foundations: One of the following:</t>
+                <td>DANCE-241: Scientific Foundations of Dance</td>
+                <td>DANCE-338: Mobilizing the Hippocampus</td>
+              </tr>
+            </table>
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least three different idioms from ballet, modern, street styles, and West African</td>
+          <td>At least 3 different idioms from the approved areas</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least two technique courses at the 300 level</td>
+          <td>At least 2 technique classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Serve on crew for the first two years, for a minimum of two dance concerts</td>
+          <td>Serve on crew for the first two years, for a minimum of two dance concerts</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Dance Minor" class="{% if minor == 'DANCE' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Dance Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>DANCE-151</td>
+          <td>Composition I</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>DANCE-171</td>
+          <td>Studies in Dance History</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>DANCE-241</td>
+          <td>Scientific Foundations of Dance</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>DANCE-272</td>
+          <td>Dance and Culture</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following</td>
+          <td>A minimum of two courses of dance technique</td>
+          <td>DANCE-305: Dance Repertory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>An additional 4 credits of dance at the 300 level, either in theory or technique</td>
+          <td>1 more dance class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Serve on crew for the first two years, for a minimum of two dance concerts</td>
+          <td>Serve on crew for the first two years, for a minimum of two dance concerts</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="DataSci Major" class="{% if major == 'DATA' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Data Science Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare a Data Science Major automatically fulfill the college's outside the
+            major
+            requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>STAT-140</td>
+          <td>Introduction to the Ideas and Applications of Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>STAT-242</td>
+          <td>Intermediate Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-211</td>
+          <td>Linear Algebra</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-151</td>
+          <td>Introduction to Computational Problem Solving</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>COMSC-205</td>
+          <td>Data Structures</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits at the 300 level from at least two departments or programs and
+            chosen from the approved list of elective courses for Data Science. One course must be either:</td>
+          <td>COMSC-335: Machine Learning</td>
+          <td>STAT-340: Applied Regression Methods</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits chosen from the approved list of elective courses for Data Science</td>
+          <td>2 approved elective classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="EastAsian Major">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">East Asian Studies Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare and East Asian Studies major automatically fulfill the college's outside
+            the major requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es) (at least 3 must be at the 300 level. One of those
+            must be a non-language and non-independent study course)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four courses (16 credits) in, equivalent to two years of college-level study of,
+            an East Asian language: Chinese, Japanese, or Korean</td>
+          <td>4 classes in Chinese, Japanese, or Korean</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>HIST-137: Modern East Asia, 1600-2000</td>
+          <td>POLIT-228: East Asian Politics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least three non-language courses (12 credits) on East Asia, from the following groups:</td>
+          <td>Humanities (literature, art, history, philosophy, and religion and
+            interdisciplinary courses in these areas)</td>
+          <td>Social Sciences (anthropology, economics, geography, international relations,
+            linguistics, politics, and sociology interdisciplinary courses in these areas)</td>
+          <td>One further non-language class on East Asia</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional courses (8 credits)</td>
+          <td>2 classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Econ Major" class="{% if major == 'ECON' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Economics Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ECON-211</td>
+          <td>Macroeconomic Theory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ECON-212</td>
+          <td>Microeconomic Theory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ECON-220: Introduction to Econometrics</td>
+          <td>ECON-320: Econometrics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three 300-level economics elective courses (two of these must be taken at Mount Holyoke)</td>
+          <td>3 economic elective classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits of economics elective courses at either the 200 or 300 level</td>
+          <td>2 economic elective classes at either the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Econ Minor" class="{% if minor == 'ECON' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Economics Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits at the 200 level or above</td>
+          <td>3 classes at the 200 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 credits at the 300 level</td>
+          <td>1 class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Edu Minor" class="{% if minor == 'EDUST' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Educational Studies Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following</td>
+          <td>EDUC-205: Social Justice in Education</td>
+          <td>EDUC-220: Foundations of Multicultural Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three courses at the 200 level or above focusing on a specific area of study</td>
+          <td>3 classes in a specific area at the 200 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUST-295</td>
+          <td>Independent Study</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="English Major" class="{% if major == 'ENGL' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">English Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ENGL-199</td>
+          <td>Introduction to the Study of Literature</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One approved disciplinary perspectives course in English at the 200 level from the following categories:
+          </td>
+          <td>Literary History and Period course</td>
+          <td>Race, Power, and Difference course</td>
+          <td>Theory and Methods course</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three English courses at the 300 level</td>
+          <td>3 english classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional English courses at the 200 or 300 level</td>
+          <td>2 english classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="English Minor" class="{% if minor == 'ENGL' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">English Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two courses in English at the 200 level</td>
+          <td>2 english classes at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two courses in English at the 300 level</td>
+          <td>2 english classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="EOS Minor" class="{% if minor == 'EOS' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Entrepreneurship, Organizations, and Society Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es) (One class must be at the 300 level)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course in Area One: Entrepreneurship</td>
+          <td>One course in the subject Entrepreneurship</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course in Area Two: Organizations and Power</td>
+          <td>One course in the subject Organizations and Power</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course in Area Three: Structures of Inequality</td>
+          <td>One course in the subject Structures of Inequality</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course in Area Four: Financial Analysis</td>
+          <td>One course in the subject Financial Analysis</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Envir Major" class="{% if major == 'ENVST' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Environmental Studies Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare an environmental studies major automatically fulfill the College's
+            "outside
+            the major" requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ENVST-100: Introduction to Environmental Studies</td>
+          <td>ENVST-150DV: Introductory Topics in Environmental Studies: 'Introduction to the Histories and Theories of
+            Development'</td>
+          <td>ENVST-150PH: Introductory Topics in Environmental Studies: 'Introduction to Environmental and Public
+            Health'
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>BIOL-145: Introductory Biology</td>
+          <td>BIOL-160: Integrated Introduction to Biology and Chemistry with Laboratory</td>
+          <td>CHEM-150: General Chemistry: Foundations</td>
+          <td>CHEM-160: Integrated Introduction to Biology and Chemistry</td>
+          <td>PHYS-100: Foundations of Physics</td>
+          <td>PHYS-110: Force, Motion, and Energy</td>
+          <td>PHYS-150: Phenomena of Physics</td>
+          <td>NEURO-100: Introduction to Neuroscience and Behavior</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ENVST-200: Environmental Science</td>
+          <td>ENVST-233HC: Topics in Environmental Studies: 'Human Health and Climate Change'</td>
+          <td>BIOL-223: Ecology with Laboratory</td>
+          <td>GEOL-203: The Earth's Surface</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ENVST-206: Human Dimensions of Global Environmental Change Change</td>
+          <td>ENVST-210: Political Ecology</td>
+          <td>ENVST-241: Environmental Issues</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ENVST-216: Global Environmental Justice</td>
+          <td>ENVST-240: The Value of Nature</td>
+          <td>ENVST-254: The Climate Humanities, Futures, and Activism</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ENVST-390</td>
+          <td>Senior Seminar in Environmental Studies</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three courses at the 300 level</td>
+          <td>3 classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional electives at the 200 or 300 level</td>
+          <td>2 electives at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Envir Minor" class="{% if minor == 'ENVST' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Environmental Studies Minor</th>
+        </tr>
+        <tr>
+          <th colspan="3">Courses in the same department as the student's major may not be counted towards the minor in
+            environmental studies</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ENVST-200: Environmental Science</td>
+          <td>ENVST-233HC: Topics in Environmental Studies: 'Human Health and Climate Change'</td>
+          <td>BIOL-223: Ecology with Laboratory</td>
+          <td>GEOL-203: The Earth's Surface</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ENVST-206: Human Dimensions of Global Environmental Change Change</td>
+          <td>ENVST-210: Political Ecology</td>
+          <td>ENVST-241: Environmental Issues</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ENVST-216: Global Environmental Justice</td>
+          <td>ENVST-240: The Value of Nature</td>
+          <td>ENVST-254: The Climate Humanities, Futures, and Activism</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One courses at the 300 level</td>
+          <td>1 class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="FMT Major" class="{% if major == 'FMT' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Film Media Theater Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>FMT-102: Introduction to Film Studies</td>
+          <td>FMT-104: Introduction to Media Studies</td>
+          <td>FMT-106: Introduction to Theater</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One class in the following areas:</td>
+          <td>One Critical Studies course at the 200 level</td>
+          <td>One Production/Performance course at the 100 or 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three additional 200-level FMT courses</td>
+          <td>3 FMT classes at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional 300-level FMT courses</td>
+          <td>2 FMT classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One Critical Studies course in FMT at the 300 level</td>
+          <td>1 critical studies FMT class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="FMT Minor" class="{% if minor == 'FMT' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Film Media Theater Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>FMT-102: Introduction to Film Studies</td>
+          <td>FMT-104: Introduction to Media Studies</td>
+          <td>FMT-106: Introduction to Theater</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 200-level FMT course in Critical Studies</td>
+          <td>1 critical studies FMT class at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 200-level FMT course in Production/Performance</td>
+          <td>1 production or performance FMT class at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One FMT elective course at the 300 level</td>
+          <td>1 FMT elective course at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four additional FMT credits at the 200 or 300 level</td>
+          <td>1 FMT class at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="French Major" class="{% if major == 'FREN' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">French Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">At least one 4-credit course taught in French must be elected each semester of the junior and
+            senior years</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two of the following</td>
+          <td>FREN-215: Intermediate Level Courses in Culture and Literature:
+            Introduction to the Literature and Culture of France and the French-Speaking World</td>
+          <td>FREN-219: Intermediate Level Courses in Culture and Literature:
+            Introduction to the French-Speaking World</td>
+          <td>FREN-225: Intermediate Level Courses in Culture and Literature:
+            Introduction to Contemporary Culture and Media of France and the French-Speaking World</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two 4-credit electives in culture and literature at the 200 or 300 level</td>
+          <td>2 elective class in culture and literature at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three additional 4-credit electives in culture and literature at the 300 level</td>
+          <td>3 elective classes in culture and literature at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four credits of advanced language study</td>
+          <td>1 class in advanced language study</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="French Minor" class="{% if minor == 'FREN' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">French Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two of the following</td>
+          <td>FREN-215: Intermediate Level Courses in Culture and Literature:
+            Introduction to the Literature and Culture of France and the French-Speaking World</td>
+          <td>FREN-219: Intermediate Level Courses in Culture and Literature:
+            Introduction to the French-Speaking World</td>
+          <td>FREN-225: Intermediate Level Courses in Culture and Literature:
+            Introduction to Contemporary Culture and Media of France and the French-Speaking World</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two advanced courses in culture and literature (300 level)</td>
+          <td>2 classes in culture and literature at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Gender Major" class="{% if major == 'GNDST' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Gender Studies Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>GNDST-101</td>
+          <td>Introduction to Gender Studies</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>GNDST-201</td>
+          <td>Methods and Practices in Feminist Scholarship</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>GNDST-221</td>
+          <td>Feminist and Queer Theory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>GNDST-290: Experiential Learning Topics</td>
+          <td>A course with a significant community-based learning component and a focus on women, gender, and/or
+            sexuality</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two GNDST-333 Advanced Seminar topics</td>
+          <td>2 classes within the offerings of GNDST-333</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>GNDST-392</td>
+          <td>Senior Seminar</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 other credits in gender studies or approved courses</td>
+          <td>2 classes in gender studies or 2 approved classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Gender Minor" class="{% if minor == 'GNDST' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Gender Studies Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>GNDST-101</td>
+          <td>Introduction to Gender Studies</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>GNDST-201: Methods and Practices in Feminist Scholarship</td>
+          <td>GNDST-221: Feminist and Queer Theory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits above the 100 level; may be chosen from gender studies courses or courses approved by the
+            department</td>
+          <td>2 classes in gender studies or 2 approved classes above the 100 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 credits at the 300 level; may be chosen from gender studies courses or courses approved by the
+            department
+          </td>
+          <td>1 class in gender studies or 1 approved class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Geo Major" class="{% if major == 'GEOG' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Geography Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>GEOG-105</td>
+          <td>World Regional Geography</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>GEOL-107</td>
+          <td>Environmental Geology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>GEOG-205: Mapping and Spatial Analysis</td>
+          <td>GEOG-210: GIS for the Social Sciences and Humanities</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Any four 200-level courses in Geography or from the list of approved courses</td>
+          <td>4 geography or approved classes at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Any two 300-level seminar courses in Geography or from the list of approved courses</td>
+          <td>2 geography or approved seminar classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Geo Minor" lass="{% if minor == 'GEOG' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Geography Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>GEOG-105</td>
+          <td>World Regional Geography</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Any three 200-level courses in Geography or from the list of approved courses</td>
+          <td>3 geography or approved classes at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Any 300-level seminar course in Geography or from the list of approved courses</td>
+          <td>1 geography or approved seminar class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Geology Major" class="{% if major == 'GEOL' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Geology Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits in geology at the 100 level or above</td>
+          <td>2 geology classes at the 100 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>16 credits in geology at the 200 level or above</td>
+          <td>4 geology classes at the 200 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits in geology at the 300 level</td>
+          <td>2 geology classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>CHEM-150: General Chemistry: Foundations</td>
+          <td>4 credits of Advanced Placement Chemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Geology Minor" class="{% if minor == 'GEOL' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Geology Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 100-level geology course</td>
+          <td>1 geology class at the 100 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits in geology at the 200 level or above</td>
+          <td>3 geology classes at the 200 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in geology at the 300 level</td>
+          <td>1 geology class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Hist Major" class="{% if major == 'HIST' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">History Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es): No more than 18 credits may be at the 100 level</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course each from three of the following different regions: Africa, Asia (including the Middle East),
+            Europe, Latin America, and North America</td>
+          <td>One class from each three of the following different regions: Africa, Asia (including the Middle East),
+            Europe, Latin America, and North America</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course with substantial content in a period prior to 1750</td>
+          <td>One class with substantial content in a period prior to 1750</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one 300-level research seminar, taken in the department (any course numbered between 302–394)
+          </td>
+          <td>At least 1 300 level research seminar</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional 300-level history courses, of which only one may be HIST-395.</td>
+          <td>2 300 level history classes of which only one may be the independent study.</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four courses that comprise a topical, chronological, or geographical concentration within the major</td>
+          <td>4 classes that comprise a topical, chronological, or geographical concentration</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Hist Minor" class="{% if minor == 'HIST' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">History Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One research seminar, taken in the department (any course numbered between 302–394)</td>
+          <td>1 research seminar</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four other courses above the 100 level</td>
+          <td>4 history classes above the 100 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="International Major">
+      <table style="width:60%" class="{% if major == 'IR' %}active-major{% endif %}">
+        <tr>
+          <th colspan="3">International Relations Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare an international relations major automatically fulfill the College's
+            "outside the major" requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Intermediate-level or higher proficiency in a foreign language</td>
+          <td>4 semesters of a foreign language</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>ECON-213: Economic Development</td>
+          <td>ECON-218: International Economics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>GEOG-105: World Regional Geography</td>
+          <td>GEOG-206: Political Geography</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>HIST-151: Europe in the Modern World</td>
+          <td>HIST-161: British Empire and Commonwealth</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>POLIT-116</td>
+          <td>World Politics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>POLIT-200</td>
+          <td>Research Methods</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Focus</td>
+          <td>At least 12 credits at the 300 level in two different disciplines, only 4 of which can be an independent
+            study</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits in international relations</td>
+          <td>2 classes in international relations</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Italian Major" class="{% if major == 'ITAL' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Italian Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ITAL-201</td>
+          <td>Preparation for Advanced Studies in Italian Language and Culture</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ITAL-209</td>
+          <td>Italian Media and Culture</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ITAL-221</td>
+          <td>Advanced Studies in Italian Culture and Literature</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ITAL-215</td>
+          <td>Conversation in Italian</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three 300-level courses in Italian literature and culture to be approved by the department</td>
+          <td>3 classes in Italian literature and culture at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in Italian</td>
+          <td>1 Italian class</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Italian Minor">
+      <table style="width:60%" class="{% if minor == 'ITAL' %}active-minor{% endif %}">
+        <tr>
+          <th colspan="3">Italian Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ITAL-201</td>
+          <td>Preparation for Advanced Studies in Italian Language and Culture</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ITAL-209</td>
+          <td>Italian Media and Culture</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ITAL-221</td>
+          <td>Advanced Studies in Italian Culture and Literature</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>ITAL-215</td>
+          <td>Conversation in Italian</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one course in Italian literature and culture at the 300 level</td>
+          <td>1 class in Italian literature and culture at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Japanese Minor" class="{% if minor == 'ASIAN' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Japanese Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two Japanese language courses at the 200 level or higher</td>
+          <td>2 Japanese classes at the 200 level or higher</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>An additional two 300-level courses in Japanese language</td>
+          <td>2 Japanese classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Jewish Minor" class="{% if minor == 'JWST' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Jewish Studies Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits in Jewish Studies at the 200 or 300 level</td>
+          <td>3 Jewish Studies classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits in Jewish Studies at the 300 level</td>
+          <td>1 Jewish Studies class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="LatinAmerican Minor" class="{% if minor == 'LATAM' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Latin American Studies Minor</th>
+        </tr>
+        <tr>
+          <th colspan="3">Courses in the student's major field may not be used to also fulfill the requirements of their
+            minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>LATAM-180</td>
+          <td>Introduction to Latin American Cultures</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 200-level or 300-level Latin American studies course</td>
+          <td>1 Latin American Studies class at ther 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one course at the 300 level</td>
+          <td>1 class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>2 additional approved courses</td>
+          <td>2 classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Math Major" class="{% if major == 'MATH' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Mathematics Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-203</td>
+          <td>Calculus III</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-211</td>
+          <td>Linear Algebra</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>MATH-232: Discrete Mathematics</td>
+          <td>MATH-206: Introduction to Proofs Through Analysis</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-301</td>
+          <td>Real Analysis</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>MATH-312GT: Abstract Algebra: 'Groups'</td>
+          <td>MATH-312RT: Abstract Algebra: 'Rings'</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in mathematics or statistics at the 300 level</td>
+          <td>1 Mathematics or Statistics class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 additional credits in mathematics or statistics at the 200 level or above</td>
+          <td>3 Mathematics or Statistics classes at the 200 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Math Minor" class="{% if minor == 'MATH' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Mathematics Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one 200-level course in mathematics</td>
+          <td>1 Mathematics class at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one 300-level course in mathematics</td>
+          <td>1 Mathematics class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional courses in mathematics or statistics at the 200 level or above</td>
+          <td>2 Mathematics or Statistics classes at the 200 level or above</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Middle Major">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Middle Eastern Studies Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare a Middle Eastern studies major automatically fulfill the College's
+            "outside
+            the major" requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four courses equivalent to two years of college-level study of a Middle Eastern language, such as Arabic,
+            Hebrew, Turkish, Persian, and Armenian</td>
+          <td>4 classes in a Middle Eastern language</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>RELIG-102</td>
+          <td>Introduction to Islam</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One introductory course in Middle Eastern history in the modern period (1500–present)</td>
+          <td>1 class on Middle Eastern history from 1500-present</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two elective courses in Humanities (language, literature, the arts, history, philosophy, and religion and
+            interdisciplinary courses in these areas)</td>
+          <td>2 elective Humanities classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two elective courses in Social Science (anthropology, economics, geography, international relations,
+            linguistics, politics, sociology, and interdisciplinary courses in these areas)</td>
+          <td>2 elective Social Sciences classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least three courses must be at the 300 level. One of the three 300-level courses must be a non-language
+            and non-independent study course.</td>
+          <td>3 classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Music Major" class="{% if major == 'MUSIC' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Music Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MUSIC-100</td>
+          <td>Rudiments of Music</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>MUSIC-231: Theorizing Classical Music</td>
+          <td>MUSIC-236: Pop Song / Jazz Tune</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following</td>
+          <td>MUSIC-281: History of Western Music I: Music to 1700</td>
+          <td>MUSIC-282: History of Western Music II: Music from 1700 to 1850</td>
+          <td>MUSIC-283: History of Western Music III: Music from 1850 to 1950</td>
+          <td>MUSIC-284: History of Western Music IV: Music Since 1950</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One ethnomusicology course</td>
+          <td>1 ethnomusicology class</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One music technology course</td>
+          <td>1 music technology class</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four credits of additional music electives at any level</td>
+          <td>1 Music elective</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Eight credits of additional music electives at the 300 level</td>
+          <td>2 Music elective classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits of individual performance study</td>
+          <td>1 individual performance study</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 2 credits of ensembles</td>
+          <td>2 credits of ensembles</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>2 additional credits in either individual performance study or ensembles</td>
+          <td>2 individual performance study or ensembles credits</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Music Minor" class="{% if minor == 'MUSIC' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Music Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MUSIC-100</td>
+          <td>Rudiments of Music</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>2 credits in music at any level</td>
+          <td>2 Music credits</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 additional credits in music at the 200 or 300 level</td>
+          <td>3 Music classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 additional credits in music at the 300 level</td>
+          <td>1 Music class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Neuro Major" class="{% if major == 'NEURO' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Neuroscience and Behavior Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare a Neuroscience and Behavior Major automatically fulfill the College's
+            "outside the major" requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>NEURO-100</td>
+          <td>Introduction to Neuroscience and Behavior</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following: </td>
+          <td>CHEM-150: General Chemistry: Foundations</td>
+          <td>CHEM-160: Integrated Introduction to Biology and Chemistry</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>CHEM-202</td>
+          <td>Organic Chemistry I</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>NEURO-221</td>
+          <td>Research Techniques in Neuroscience</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-204</td>
+          <td>Research Methods in Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>NEURO-246: Cognitive Neuroscience</td>
+          <td>NEURO-254: Psychopharmacology</td>
+          <td>NEURO-256: Hormones and Behavior</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>BIOL-200</td>
+          <td>Introductory Biology II: How Organisms Develop with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following: </td>
+          <td>BIOL-210: Molecular Genetics with Laboratory</td>
+          <td>BIOL-220: Cell Biology with Laboratory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following: </td>
+          <td>PSYCH-201: Statistics</td>
+          <td>STAT-242: Intermediate Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two of the following laboratory courses: </td>
+          <td>BIOCH-312: Chemistry of Biomolecules (with BIOCH-318 lab)</td>
+          <td>CHEM-312: Chemistry of Biomolecules</td>
+          <td>BIOL-307: Vertebrate Anatomy with Laboratory</td>
+          <td>BIOL-328: Human Physiology with Laboratory</td>
+          <td>BIOL-333: Neurobiology with Laboratory</td>
+          <td>COMSC-334: Artificial Intelligence</td>
+          <td>COMSC-341NL: Topics: 'Natural Language Processing'</td>
+          <td>NEURO-309ND: Topics in Neuroscience and Behavior: 'Analysis of Neural Data'</td>
+          <td>NEURO-324: Cellular and Molecular Neuroscience</td>
+          <td>NEURO-336: Systems Neuroscience</td>
+          <td>NEURO-342: Mapping the Brain: A Hands-on Introduction to Connectomics</td>
+          <td>NEURO-395: Independent Study</td>
+          <td>PSYCH-350BN: Lab in Biological Bases of Behavior: 'Laboratory in Behavioral Neuroscience'</td>
+          <td>PSYCH-350ET: Lab in Biological Bases of Behavior: 'Ethology'</td>
+          <td>PSYCH-340CL: Laboratory in Perception and Cognition: 'Cognition and Literacy'</td>
+          <td>PSYCH-340SP: Laboratory in Perception and Cognition: 'Speech'</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 300 level course from the previous list or one of the following:</td>
+          <td>BIOL-321EU: Conference Course: 'The Neuron'</td>
+          <td>CHEM-312: Chemistry of Biomolecules</td>
+          <td>BIOCH-312: Chemistry of Biomolecules</td>
+          <td>NEURO-309: Topics in Neuroscience and Behavior</td>
+          <td>NEURO-331: Glial Cells in Health and Disease</td>
+          <td>NEURO-338: Mobilizing the Hippocampus</td>
+          <td>PSYCH-339AQ: Seminar in Developmental Psychology: 'Language Acquisition and Disorders in Childhood'</td>
+          <td>PSYCH-349AD: Seminar in Perception and Cognition: 'Adult Literacy'</td>
+          <td>PSYCH-349AM: Seminar in Perception and Cognition: 'Art, Music, and the Brain'</td>
+          <td>PSYCH-349LT: Seminar in Perception and Cognition: 'Language and Thought'</td>
+          <td>PSYCH-359MD: Seminar: Biological Bases of Behavior: 'Symptoms and Mechanisms of Major Depressive Disorder'
+          </td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Philosophy Major" class="{% if major == 'PHIL' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Philosophy Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHIL-201</td>
+          <td>Philosophical Foundations of Western Thought: The Greek Period</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHIL-202</td>
+          <td>Philosophical Foundations of Western Thought: The Modern Period</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHIL-212</td>
+          <td>Philosophical Foundations of Chinese Thought: The Ancient Period</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>PHIL-205: Ethics</td>
+          <td>PHIL-273: Philosophy of the Arts</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>PHIL-222: Philosophy of Quantum Mechanics</td>
+          <td>PHIL-272: Metaphysics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>PHIL-170: Logical Thought</td>
+          <td>PHIL-225: Symbolic Logic</td>
+          <td>PHIL-328: Non-Classical Logic</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 12 credits in philosophy at the 300 level</td>
+          <td>3 Philosophy classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in philosophy</td>
+          <td>1 Philosophy class</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Philosophy Minor" class="{% if minor == 'PHIL' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Philosophy Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>16 credits in philosophy at the 200 or 300 level</td>
+          <td>4 Philosophy classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in philosophy at the 300 level</td>
+          <td>1 Philosophy class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Physics Major" class="{% if major == 'PHYS' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Physics Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHYS-110</td>
+          <td>Force, Motion, and Energy</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHYS-201</td>
+          <td>Electromagnetism</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHYS-205</td>
+          <td>Introduction to Mathematical Methods for Scientists</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHYS-210</td>
+          <td>Waves and Optics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHYS-250</td>
+          <td>Quantum Mechanical Phenomena</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHYS-231</td>
+          <td>Techniques of Experimental Physics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two of the following:</td>
+          <td>PHYS-315: Analytical Mechanics</td>
+          <td>PHYS-325: Electromagnetic Theory</td>
+          <td>PHYS-326: Statistical Mechanics and Thermodynamics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following</td>
+          <td>PHYS-220: Intermediate Lab in Physics</td>
+          <td>PHYS-308: Electronics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the courses from the preceding list or the following:</td>
+          <td>PHYS-295: Independent Study</td>
+          <td>PHYS-295: Independent Study with Practicum</td>
+          <td>PHYS-395: Independent Study</td>
+          <td>PHYS-395P: Independent Study with Practicum</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Physics Minor" class="{% if minor == 'PHYS' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Physics Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PHYS-201</td>
+          <td>Electromagnetism</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Any three of the following:</td>
+          <td>PHYS-205: Introduction to Mathematical Methods for Scientists</td>
+          <td>PHYS-210: Waves and Optics</td>
+          <td>PHYS-250: Quantum Mechanical Phenomena</td>
+          <td>PHYS-308: Electronics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Politics Major" class="{% if major == 'POLIT' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Politics Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>POLIT-104: American Politics</td>
+          <td>POLIT-235: Constitutional Law: The Federal System</td>
+          <td>POLIT-236: Civil Liberties</td>
+          <td>POLIT-246: American Political Thought</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>POLIT-106: Comparative Politics</td>
+          <td>POLIT-208: Chinese Politics</td>
+          <td>POLIT-209: Contemporary Russian Politics</td>
+          <td>POLIT-228: East Asian Politics</td>
+          <td>POLIT-243: Introduction to Latin American Politics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>POLIT-116: World Politics</td>
+          <td>POLIT-232: Introduction to International Political Economy</td>
+          <td>POLIT-247: International Law and Organization</td>
+          <td>POLIT-270: American Foreign Policy</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>POLIT-118: Introduction to Political Ideas</td>
+          <td>POLIT-233: Introduction to Feminist Theory</td>
+          <td>POLIT-246: American Political Thought</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three courses (12 credits) at the 300 level, two of which must be taken at Mount Holyoke College</td>
+          <td>3 classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 additional credits in politics at the 200 or 300 level</td>
+          <td>1 Politics class at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Politics Minor" class="{% if minor == 'POLIT' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Politics Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es): Must span at least two of the department's four subfields (American Politics, Comparative
+            Politics, International Politics, Political Theory)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits in politics at the 200 level or above</td>
+          <td>3 Politics classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits in politics at the 300 level</td>
+          <td>1 Politics class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Psych Major" class="{% if major == 'PSYCH' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Psychology Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 100-level course in psychology</td>
+          <td>1 Psychology class at the 100 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-201</td>
+          <td>Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-204</td>
+          <td>Research Methods in Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three 200 level courses in at least three of the following five areas: </td>
+          <td>Social Psychology</td>
+          <td>Personality and Abnormal Psychology</td>
+          <td>Developmental and Educational Psychology</td>
+          <td>Perception, Cognition and Language</td>
+          <td>Biological Bases of Behavior</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>PSYCH-310: Laboratory: Social Psychology</td>
+          <td>PSYCH-326: Laboratory in Personality and Abnormal Psychology</td>
+          <td>PSYCH-330: Lab in Developmental Psychology</td>
+          <td>PSYCH-331: Laboratory in Early Childhood Learning and Development</td>
+          <td>PSYCH-340: Laboratory in Perception and Cognition</td>
+          <td>PSYCH-350: Lab in Biological Bases of Behavior</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional 300-level courses, which can be fulfilled by any combination of the following:</td>
+          <td>Additional laboratory courses</td>
+          <td>Lecture, seminar, practicum courses</td>
+          <td>Independent study at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Psych Minor" class="{% if minor == 'PSYCH' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Psychology Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-201</td>
+          <td>Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-204</td>
+          <td>Research Methods in Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 200 or 300 level from curriculum areas A-C: social psychology; personality and abnormal
+            psychology; and developmental and educational psychology</td>
+          <td>1 class from areas A-C at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 200 or 300 level from curriculum areas D-E: perception, cognition, and language; and
+            biological bases of behavior</td>
+          <td>1 class from areas D-E at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="PsychEdTeach Major" class="{% if major == 'EDUC' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Psychology and Education Major: Early Childhood or Elementary Education</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare a psychology and education major automatically fulfill the College's
+            "outside the major" requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 100-level course in psychology</td>
+          <td>1 Psychology class at the 100 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-201</td>
+          <td>Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-204</td>
+          <td>Research Methods in Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-230</td>
+          <td>Developmental Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-233</td>
+          <td>Educational Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>EDUC-205: Social Justice in Education</td>
+          <td>EDUC-220: Foundations of Multicultural Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-263</td>
+          <td>Teaching English Learners</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 200 or 300 level in Area D (perception, cognition, and language) or Area E (biological
+            bases of behavior) of the psychology curriculum</td>
+          <td>1 class in Areas D or E at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one course at the 200 or 300 level in psychology in Area A (social psychology) or
+            Area B (personality and abnormal psychology) or Areas D or E (whichever area was not selected to complete
+            the
+            Area D or E requirement above)</td>
+          <td>1 class in Areas A, B, or D/E at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One Psychology laboratory at the 300 level, if not completed in meeting the Area requirements above</td>
+          <td>1 Pyschology laboratory at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-300</td>
+          <td>The Process of Teaching and Learning: Developing Literacy in Early Childhood and Elementary Schools</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-323</td>
+          <td>Student Teaching in Early Childhood and Elementary Schools</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-320</td>
+          <td>Observing and Assisting in Inclusive Classrooms</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-325</td>
+          <td>The Process of Teaching and Learning: Developing Math/Science/Technology Instruction and Curriculum</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-322</td>
+          <td>Practicum Seminar on Teaching and Learning: Early Childhood and Elementary Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+
+    <div id="PsychEdOther Major" class="{% if major == 'EDUC' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Psychology and Education Major: Not Leading to Teacher Licensure</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare a psychology and education major automatically fulfill the College's
+            "outside the major" requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One 100-level course in psychology</td>
+          <td>1 Psychology class at the 100 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-201</td>
+          <td>Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-204</td>
+          <td>Research Methods in Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-230</td>
+          <td>Developmental Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-233</td>
+          <td>Educational Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>EDUC-205: Social Justice in Education</td>
+          <td>EDUC-220: Foundations of Multicultural Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course at the 200 or 300 level in Area D (perception, cognition, and language) or Area E (biological
+            bases of behavior) of the psychology curriculum</td>
+          <td>1 class in Areas D or E at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one course at the 200 or 300 level in psychology in Area A (social psychology) or
+            Area B (personality and abnormal psychology) or Areas D or E (whichever area was not selected to complete
+            the
+            Area D or E requirement above)</td>
+          <td>1 class in Areas A, B, or D/E at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One Psychology laboratory at the 300 level</td>
+          <td>1 Pyschology laboratory at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits in psychology above the 100 level.
+            These credits must be at the 300 level, unless 12 other 300-level credits were completed in meeting Area
+            requirements</td>
+          <td>2 Psychology classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="PsychEdEarly Minor" class="{% if minor == 'EDUC' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Psychology and Education Minor: Early Childhood and Elementary Teaching License</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-230</td>
+          <td>Developmental Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-233</td>
+          <td>Educational Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>EDUC-205: Social Justice in Education</td>
+          <td>EDUC-220: Foundations of Multicultural Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-263</td>
+          <td>Teaching English Learners</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-300</td>
+          <td>The Process of Teaching and Learning: Developing Literacy in Early Childhood and Elementary Schools</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-323</td>
+          <td>Student Teaching in Early Childhood and Elementary Schools</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-320</td>
+          <td>Observing and Assisting in Inclusive Classrooms</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-325</td>
+          <td>The Process of Teaching and Learning: Developing Math/Science/Technology Instruction and Curriculum</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-322</td>
+          <td>Practicum Seminar on Teaching and Learning: Early Childhood and Elementary Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-331 (for PreK-2 applicants only)</td>
+          <td>Laboratory in Early Childhood Learning and Development</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="PsychEdOther Minor">
+      <table style="width:60%" class="{% if minor == 'EDUC' %}active-minor{% endif %}">
+        <tr>
+          <th colspan="3">Psychology and Education Minor: Teaching Licenses in Middle or Secondary Education,
+            Foreign Language, Dance, Music, Theater, or Visual Art</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-230</td>
+          <td>Developmental Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>PSYCH-233</td>
+          <td>Educational Psychology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One of the following:</td>
+          <td>EDUC-205: Social Justice in Education</td>
+          <td>EDUC-220: Foundations of Multicultural Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-263</td>
+          <td>Teaching English Learners</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-320</td>
+          <td>Observing and Assisting in Inclusive Classrooms</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-330</td>
+          <td>The Process of Teaching and Learning in Secondary and Middle Schools</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-331</td>
+          <td>Student Teaching in Secondary and Middle Schools</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>EDUC-333</td>
+          <td>Practicum Seminar on Teaching and Learning: Middle and Secondary Education</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>A subject-specific methods of teaching course at one of the Five Colleges</td>
+          <td>A subject-specific methods of teaching course at one of the Five Colleges</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Religion Major" class="{% if major == 'RELIG' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Religion Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es): At least three different religious traditions such as Buddhism, Christianity, Hinduism, Islam,
+            or
+            Judaism</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>20 credits in religion at any level</td>
+          <td>5 Religion classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 additional credits in religion at the 300 level</td>
+          <td>3 Religion classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Religion Minor" class="{% if minor == 'RELIG' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Religion Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four courses in religion at any level</td>
+          <td>4 Religion classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one additional course in religion at the 300 level</td>
+          <td>1 Religion class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Romance Major" class="{% if major == 'ROMLG' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Romance Languages and Cultures Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare a Romance Languages and Cultures Major automatically fulfill the
+            College's
+            "outside the major" requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits in Romance languages and cultures at the 200 or 300 level but always above FREN-203, SPAN-201,
+            and ITAL-201</td>
+          <td>3 Romance languages and cultures at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>16 credits at the 300 level dedicated to the language and literature of primary emphasis</td>
+          <td>4 classes in the language and literature of the primary emphasis at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 credits at the 300 level dedicated to the language and literature of secondary emphasis</td>
+          <td>3 classes in the language and literature of the secondary emphasis at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Romance Minor" class="{% if minor == 'ROMLG' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Romance Languages and Cultures Minor</th>
+        </tr>
+        <tr>
+          <th colspan="3">A student majoring in a Romance language may not include that language in a Romance languages
+            and cultures minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least 4 credits at the 200 level in the primary emphasis</td>
+          <td>1 class in the primary emphasis at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 credits at the 300 level, with completion of specified prerequisites in the primary emphasis</td>
+          <td>1 class in the primary emphasis at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits at the 200 level in the secondary emphasis</td>
+          <td>2 classes in the secondary emphasis at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Sociology Major" class="{% if major == 'SOCI' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Sociology Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>SOCI-123</td>
+          <td>Introduction to Sociology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>SOCI-223</td>
+          <td>Development of Social Thought</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two of the following:</td>
+          <td>SOCI-216QD: Special Topics in Sociology: 'Qualitative Research and Data Analysis'</td>
+          <td>SOCI-216TX: Special Topics in Sociology: 'Text as Data I: From Qualitative to Quantitative Text Analysis'
+          </td>
+          <td>SOCI-225: Social Science Research and Data Analysis</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>SOCI-333</td>
+          <td>Contemporary Social Theory</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 credits at the 300 level</td>
+          <td>2 classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>8 additional credits beyond the 100 level</td>
+          <td>2 classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Sociology Minor" class="{% if minor == 'SOCI' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Sociology Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>SOCI-123</td>
+          <td>Introduction to Sociology</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>4 credits at the 300 level</td>
+          <td>1 class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 additional credits above the 100 level</td>
+          <td>3 classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="SAS Major">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">South Asian Studies Major</th>
+        </tr>
+        <tr>
+          <th colspan="3">Students who declare a South Asian studies major automatically fulfill the College's "outside
+            the major" requirement</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>HIST-124</td>
+          <td>History of Modern South Asia, 1700 to the Present</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One course (4 credits) on pre-modern and/or early modern South Asia (c. 3000 BCE to 1700 CE)</td>
+          <td>1 class on pre-modern and/or early modern South Asia</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two elective courses (8 credits) must be from Group One: Humanities (history, religion, philosophy,
+            literature, language, the arts, and interdisciplinary courses in these areas)</td>
+          <td>2 Humanities elective classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>One (4 credits) must be from Group Two: Social Science (anthropology, economics, geography, international
+            relations, linguistics, politics, sociology, and interdisciplinary courses in these areas)</td>
+          <td>1 Social Sciences elective class</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least three courses (12 credits) must be at the 300 level. One of the three 300-level courses must be a
+            non-language and non-independent study course.</td>
+          <td>3 classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two elective courses</td>
+          <td>2 elective classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Spanish Major" class="{% if major == 'SPAN' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Spanish Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>SPAN-212</td>
+          <td>Preparation for Advanced Studies</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>A minimum of three 300-level courses, at least one of which must be taken in the senior year at Mount
+            Holyoke in Spanish</td>
+          <td>3 classes at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Four other courses in Spanish at any level, within the following restrictions:
+            two 200-level introductory courses (above SPAN-212) must be taken prior to enrolling in any 300-level
+            course,
+            and
+            at least one of the courses above SPAN-212 must at least in part concentrate on Spain and/or Latin America
+            before 1800.</td>
+          <td>4 Spanish classes</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Spanish Minor" class="{% if minor == 'SPAN' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Spanish Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>SPAN-212</td>
+          <td>Preparation for Advanced Studies</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one 300-level course</td>
+          <td>1 class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Three other courses at the 200 or 300-level. One course below SPAN-212 could be substituted for one of
+            these
+          </td>
+          <td>3 classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Stat Major" class="{% if major == 'STAT' %}active-major{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Statistics Major</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-203</td>
+          <td>Calculus III</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-211</td>
+          <td>Linear Algebra</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>STAT-242</td>
+          <td>Intermediate Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>STAT-340</td>
+          <td>Applied Regression Methods</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>MATH-342</td>
+          <td>Probability</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>STAT-343</td>
+          <td>Mathematical Statistics</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>12 additional credits in mathematics or statistics at the 200-level or above</td>
+          <td>3 Mathematics or Statistics classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Stat Minor" class="{% if minor == 'STAT' %}active-minor{% endif %}">
+      <table style="width:60%">
+        <tr>
+          <th colspan="3">Statistics Minor</th>
+        </tr>
+        <tr>
+          <th>Requirement</th>
+          <th>Class(es)</th>
+          <th>Fulfilled?</th>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one 200-level course in statistics</td>
+          <td>1 Statistics class at the 200 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>At least one 300-level course in statistics</td>
+          <td>1 Statistics class at the 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+
+        <tr style="background-color: #FFD1DC;">
+          <td>Two additional courses in mathematics or statistics at the 200 level or above</td>
+          <td>2 Mathematics or Statistics classes at the 200 or 300 level</td>
+          <td><button onclick="switchStatus(this)">Not Taken</button></td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+      const selectedNames = {{ selected_names | tojson | safe }};
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const allProgramSections = document.querySelectorAll(".container > div[id]");
+
+        allProgramSections.forEach(section => {
+          if (selectedNames.includes(section.id)) {
+            section.style.display = "block";
+          } else {
+            section.style.display = "none";
+          }
+        });
+      });
+
+      function switchStatus(button) {
+        const row = button.closest("tr");
+
+        if (button.textContent.trim() === "Not Taken") {
+          button.textContent = "Taken";
+          row.style.backgroundColor = "#DAFFD5";
+        } else {
+          button.textContent = "Not Taken";
+          row.style.backgroundColor = "#FFD1DC";
+        }
+      }
+    </script>
+  </div>
+</body>
+
+</html>
