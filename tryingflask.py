@@ -38,6 +38,7 @@ PROGRAM_NAME_MAP = {
     "Chemistry": "Chem",
     "Classical Studies": "ClassicsStudies",
     "Computer Science": "CompSci",
+    "Data Science": "DataSci Major",
     "Dance": "Dance",
     "Mathematics": "Math",
     "Music": "Music",
