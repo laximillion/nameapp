@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Main Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+
+<body>
+    <h2>Mount Holyoke</h2>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="error-box">
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    <form action="{{ url_for('requirements') }}" method="post">
+        <div class="form-row">
+            <label for="major1">Major</label>
+            <select name="major1" id="major1" required>
+                <option value="" selected disabled hidden></option>
+                {% for major in majorslist %}
+                <option value="{{ major }}">{{ major }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-row optional-field">
+            <label for="major2">
+                <span class="optional-symbol">+</span>
+                Second major
+            </label>
+            <select name="major2" id="major2">
+                <option value="" selected disabled hidden></option>
+                {% for major in majorslist %}
+                <option value="{{ major }}">{{ major }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="form-row optional-field">
+            <label for="minor">
+                <span class="optional-symbol">+</span>
+                Minor
+            </label>
+            <select name="minor" id="minor">
+                <option value="" selected disabled hidden></option>
+                {% for minor in minorslist %}
+                <option value="{{ minor }}">{{ minor }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <input type="submit" value="View the requirement" class="action-button">
+    </form>
+</body>
+
+</html>
