@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Course Requirement Tables</title>
+    </head>
+
+    <body>
+        <div id="Req">
+            <button onclick="create()">Click me</button>
+        </div>
+
+        <script>
+            function create() {
+                let file = JSON.parse(course_catalog.json);
+                let container = document.getElementById("Req");
+                let table = document.createElement("table");
+                for (let i = 0; i < file.length; i++) {
+                    let course = file[i];
+                    if (file[i][6].includes("S")) {
+                            let tr = document.createElement("tr");
+                            let td1 = document.createElement("td");
+                            td1.textContent = file[i][1];
+                            tr.appendChild(td1);
+                            let td2 = document.createElement("td");
+                            td2.textContent = file[i][2];
+                            tr.appendChild(td2);
+                            let td6 = document.createElement("td");
+                            td6.textContent = file[i][6];
+                            tr.appendChild(td6);
+                            table.appendChild(tr);
+                            }
+                        }
+                        container.appendChild(table);
+                    }
+        </script>
+    </body>
+</html>
