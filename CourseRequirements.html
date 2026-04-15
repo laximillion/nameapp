@@ -4,33 +4,48 @@
     </head>
 
     <body>
-        <div id="Req">
-            <button onclick="create()">Click me</button>
-        </div>
+        <button onclick="createS()">Click me</button>
+        <div id="Req"></div>
 
         <script>
-            function create() {
-                let file = JSON.parse(course_catalog.json);
+            function createS() {
+                //create the place for the table to be stored
                 let container = document.getElementById("Req");
                 let table = document.createElement("table");
-                for (let i = 0; i < file.length; i++) {
-                    let course = file[i];
-                    if (file[i][6].includes("S")) {
+
+                //get the file
+                fetch("course_catalog.json")
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+
+                //find the information we need and put in the table
+
+                //makes the json structure (object of objects) into an array of objects
+                const courses = Object.values(data);
+
+                //loop through all courses and find the one with the requirement we need
+                for (let i = 0; i < courses.length; i++) {
+                    let course = courses[i];
+                    if (course.requirements && ((course.requirements).includes("S"))) {
                             let tr = document.createElement("tr");
                             let td1 = document.createElement("td");
-                            td1.textContent = file[i][1];
+                            td1.textContent = course.courseCode;
                             tr.appendChild(td1);
                             let td2 = document.createElement("td");
-                            td2.textContent = file[i][2];
+                            td2.textContent = course.title;
                             tr.appendChild(td2);
                             let td6 = document.createElement("td");
-                            td6.textContent = file[i][6];
+                            td6.textContent = course.requirements;
                             tr.appendChild(td6);
                             table.appendChild(tr);
                             }
                         }
+                        //put the table in the html so we can see it
                         container.appendChild(table);
-                    }
+                    })
+                }
         </script>
     </body>
 </html>
