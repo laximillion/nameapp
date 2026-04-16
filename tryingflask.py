@@ -27,6 +27,19 @@ minorslist = load_list(minors_file)
 # map dropdown text -> htmltablecs.html section id base
 PROGRAM_NAME_MAP = {
     # majors + minors
+    "Film Media Theater": "FMT Major",
+    "Gender studies": "Gender Major",
+    "Geography": "Geo Major",
+    "History": "Hist Major",
+    "International relations": "International Major",
+    "Middle Eastern studies": "Middle Major",
+    "Neuroscience and Behavior": "Neuro Major",
+    "Psychology": "Psych Major",
+    "Psychology and Education Major: Early Childhood or Elementary Education": "PsychEdTeach Major",
+    "Psychology and Education Major: Not Leading to Teacher Licensure": "PsychEdOther Major",
+    "Romance Languages and Cultures": "Romance Major",
+    "South Asian studies": "SAS Major",
+    "Statistics": "Stat Major",
     "Africana Studies": "Africana",
     "Anthropology": "Anthropology",
     "Architectural Studies": "Arch",
