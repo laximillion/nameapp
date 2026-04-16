@@ -4270,6 +4270,7 @@
 
     <script>
       const selectedNames = {{ selected_names | tojson | safe }};
+      console.log(selectedNames);
 
       document.addEventListener("DOMContentLoaded", function () {
         const allProgramSections = document.querySelectorAll(".container > div[id]");

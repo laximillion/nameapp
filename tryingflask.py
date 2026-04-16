@@ -27,19 +27,19 @@ minorslist = load_list(minors_file)
 # map dropdown text -> htmltablecs.html section id base
 PROGRAM_NAME_MAP = {
     # majors + minors
-    "Film Media Theater": "FMT Major",
-    "Gender studies": "Gender Major",
-    "Geography": "Geo Major",
-    "History": "Hist Major",
-    "International relations": "International Major",
-    "Middle Eastern studies": "Middle Major",
-    "Neuroscience and Behavior": "Neuro Major",
-    "Psychology": "Psych Major",
-    "Psychology and Education Major: Early Childhood or Elementary Education": "PsychEdTeach Major",
-    "Psychology and Education Major: Not Leading to Teacher Licensure": "PsychEdOther Major",
-    "Romance Languages and Cultures": "Romance Major",
-    "South Asian studies": "SAS Major",
-    "Statistics": "Stat Major",
+    "Film Media Theater": "FMT",
+    "Gender studies": "Gender",
+    "Geography": "Geo",
+    "History": "Hist",
+    "International relations": "International",
+    "Middle Eastern studies": "Middle",
+    "Neuroscience and Behavior": "Neuro",
+    "Psychology": "Psych",
+    "Psychology and Education: Early Childhood or Elementary Education": "PsychEdTeach",
+    "Psychology and Education: Not Leading to Teacher Licensure": "PsychEdOther",
+    "Romance Languages and Cultures": "Romance",
+    "South Asian studies": "SAS",
+    "Statistics": "Stat",
     "Africana Studies": "Africana",
     "Anthropology": "Anthropology",
     "Architectural Studies": "Arch",
@@ -51,10 +51,10 @@ PROGRAM_NAME_MAP = {
     "Chemistry": "Chem",
     "Classical Studies": "ClassicsStudies",
     "Computer Science": "CompSci",
-    "Data Science": "DataSci Major",
+    "Data Science": "DataSci",
     "Dance": "Dance",
-    "East Asian Studies": "EastAsian Major",
-    "Environmental Studies": "Envir Major",
+    "East Asian Studies": "EastAsian",
+    "Environmental Studies": "Envir",
     "Mathematics": "Math",
     "Music": "Music",
     "Philosophy": "Philosophy",
@@ -66,7 +66,7 @@ PROGRAM_NAME_MAP = {
     "Sociology": "Sociology",
     "Spanish": "Spanish",
     "Statistics": "Statistics",
-    "Economics": "Econ Major",
+    "Economics": "Econ",
     "English": "English",
     "Environmental Studies": "EnvironmentalStudies",
     "French": "French",
@@ -98,10 +98,11 @@ PROGRAM_NAME_MAP = {
 def to_section_name(program_name, program_type):
     """
     Converts dropdown text like 'Computer Science'
-    into html section id like 'CompSci Major' or 'CompSci Minor'
+    into html section id like 'CompSci' or 'CompSci Minor'
     """
     base = PROGRAM_NAME_MAP.get(program_name)
 
+    print(program_name)
     if not base:
         return None
 
