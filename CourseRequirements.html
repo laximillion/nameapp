@@ -4,7 +4,7 @@
     </head>
 
     <body>
-        <button onclick="createS()">Click me</button>
+        <button onclick="createL()">Click me</button>
         <div id="Req"></div>
 
         <script>
@@ -20,15 +20,15 @@
                     })
                     .then(data => {
 
-                //find the information we need and put in the table
+                    //find the information we need and put in the table
 
-                //makes the json structure (object of objects) into an array of objects
-                const courses = Object.values(data);
+                    //makes the json structure (object of objects) into an array of objects
+                    const courses = Object.values(data);
 
-                //loop through all courses and find the one with the requirement we need
-                for (let i = 0; i < courses.length; i++) {
-                    let course = courses[i];
-                    if (course.requirements && ((course.requirements).includes("S"))) {
+                    //loop through all courses and find the one with the requirement we need
+                    for (let i = 0; i < courses.length; i++) {
+                        let course = courses[i];
+                        if (course.requirements && ((course.requirements).includes("S"))) {
                             let tr = document.createElement("tr");
                             let td1 = document.createElement("td");
                             td1.textContent = course.courseCode;
@@ -36,16 +36,282 @@
                             let td2 = document.createElement("td");
                             td2.textContent = course.title;
                             tr.appendChild(td2);
+
+                            
                             let td6 = document.createElement("td");
-                            td6.textContent = course.requirements;
+                            let reqs = "";
+                            for (let k = 0; k < (course.requirements).length; k++) {
+                                let abbrev = course.requirements[k];
+                                if ((course.requirements[k]).includes("S")) {
+                                    reqs = reqs + "Social Studies";
+                                }
+                                if ((course.requirements[k]).includes("M")) {
+                                    reqs = reqs + ", Multicultural Perspectives";
+                                }
+                                if ((course.requirements[k]).includes("H")) {
+                                    reqs = reqs + ", Humanities";
+                                }
+                                if ((course.requirements[k]).includes("MS")) {
+                                    reqs = reqs + ", Math Sciences";
+                                }
+                                if ((course.requirements[k]).includes("L")) {
+                                    reqs = reqs + ", Languages";
+                                }
+                            }
+                            td6.textContent = reqs;
+
                             tr.appendChild(td6);
                             table.appendChild(tr);
-                            }
                         }
-                        //put the table in the html so we can see it
-                        container.appendChild(table);
+                    }
+                    //put the table in the html so we can see it
+                    container.appendChild(table);
+                })
+            }
+
+            function createM() {
+                //create the place for the table to be stored
+                let container = document.getElementById("Req");
+                let table = document.createElement("table");
+
+                //get the file
+                fetch("course_catalog.json")
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+
+                    //find the information we need and put in the table
+
+                    //makes the json structure (object of objects) into an array of objects
+                    const courses = Object.values(data);
+
+                    //loop through all courses and find the one with the requirement we need
+                    for (let i = 0; i < courses.length; i++) {
+                        let course = courses[i];
+                        if (course.requirements && ((course.requirements).includes("M"))) {
+                            let tr = document.createElement("tr");
+                            let td1 = document.createElement("td");
+                            td1.textContent = course.courseCode;
+                            tr.appendChild(td1);
+                            let td2 = document.createElement("td");
+                            td2.textContent = course.title;
+                            tr.appendChild(td2);
+
+                            
+                            let td6 = document.createElement("td");
+                            let reqs = "";
+                            for (let k = 0; k < (course.requirements).length; k++) {
+                                let abbrev = course.requirements[k];
+                                if ((course.requirements[k]).includes("S")) {
+                                    reqs = reqs + "Social Studies";
+                                }
+                                if ((course.requirements[k]).includes("M")) {
+                                    reqs = reqs + ", Multicultural Perspectives";
+                                }
+                                if ((course.requirements[k]).includes("H")) {
+                                    reqs = reqs + ", Humanities";
+                                }
+                                if ((course.requirements[k]).includes("MS")) {
+                                    reqs = reqs + ", Math Sciences";
+                                }
+                                if ((course.requirements[k]).includes("L")) {
+                                    reqs = reqs + ", Languages";
+                                }
+                            }
+                            td6.textContent = reqs;
+
+                            tr.appendChild(td6);
+                            table.appendChild(tr);
+                        }
+                    }
+                    //put the table in the html so we can see it
+                    container.appendChild(table);
+                })
+            }
+
+            function createH() {
+                //create the place for the table to be stored
+                let container = document.getElementById("Req");
+                let table = document.createElement("table");
+
+                //get the file
+                fetch("course_catalog.json")
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+
+                    //find the information we need and put in the table
+
+                    //makes the json structure (object of objects) into an array of objects
+                    const courses = Object.values(data);
+
+                    //loop through all courses and find the one with the requirement we need
+                    for (let i = 0; i < courses.length; i++) {
+                        let course = courses[i];
+                        if (course.requirements && ((course.requirements).includes("H"))) {
+                            let tr = document.createElement("tr");
+                            let td1 = document.createElement("td");
+                            td1.textContent = course.courseCode;
+                            tr.appendChild(td1);
+                            let td2 = document.createElement("td");
+                            td2.textContent = course.title;
+                            tr.appendChild(td2);
+
+                            
+                            let td6 = document.createElement("td");
+                            let reqs = "";
+                            for (let k = 0; k < (course.requirements).length; k++) {
+                                let abbrev = course.requirements[k];
+                                if ((course.requirements[k]).includes("S")) {
+                                    reqs = reqs + "Social Studies";
+                                }
+                                if ((course.requirements[k]).includes("M")) {
+                                    reqs = reqs + ", Multicultural Perspectives";
+                                }
+                                if ((course.requirements[k]).includes("H")) {
+                                    reqs = reqs + ", Humanities";
+                                }
+                                if ((course.requirements[k]).includes("MS")) {
+                                    reqs = reqs + ", Math Sciences";
+                                }
+                                if ((course.requirements[k]).includes("L")) {
+                                    reqs = reqs + ", Languages";
+                                }
+                            }
+                            td6.textContent = reqs;
+
+                            tr.appendChild(td6);
+                            table.appendChild(tr);
+                        }
+                    }
+                    //put the table in the html so we can see it
+                    container.appendChild(table);
+                })
+            }
+
+            function createMS() {
+                //create the place for the table to be stored
+                let container = document.getElementById("Req");
+                let table = document.createElement("table");
+
+                //get the file
+                fetch("course_catalog.json")
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+
+                    //find the information we need and put in the table
+
+                    //makes the json structure (object of objects) into an array of objects
+                    const courses = Object.values(data);
+
+                    //loop through all courses and find the one with the requirement we need
+                    for (let i = 0; i < courses.length; i++) {
+                        let course = courses[i];
+                        if (course.requirements && (course.requirements).includes("MS")) {
+                                    let tr = document.createElement("tr");
+                                    let td1 = document.createElement("td");
+                                    td1.textContent = course.courseCode;
+                                    tr.appendChild(td1);
+                                    let td2 = document.createElement("td");
+                                    td2.textContent = course.title;
+                                    tr.appendChild(td2);
+
+                            
+                                    let td6 = document.createElement("td");
+                                    let reqs = "";
+                                    for (let k = 0; k < (course.requirements).length; k++) {
+                                        let abbrev = course.requirements[k];
+                                        if ((course.requirements[k]) === "S") {
+                                            reqs = reqs + "Social Studies";
+                                        }
+                                        if ((course.requirements[k]) === "M") {
+                                            reqs = reqs + ", Multicultural Perspectives";
+                                        }
+                                        if ((course.requirements[k]) === "H") {
+                                            reqs = reqs + ", Humanities";
+                                        }
+                                        if ((course.requirements[k]) === "MS") {
+                                            reqs = reqs + "Math Sciences";
+                                        }
+                                        if ((course.requirements[k]) === "L") {
+                                            reqs = reqs + ", Languages";
+                                        }
+                                    }
+                                    td6.textContent = reqs;
+
+                                    tr.appendChild(td6);
+                                    table.appendChild(tr);
+                                }
+                            }
+                    //put the table in the html so we can see it
+                    container.appendChild(table);
                     })
                 }
+
+            function createL() {
+                //create the place for the table to be stored
+                let container = document.getElementById("Req");
+                let table = document.createElement("table");
+
+                //get the file
+                fetch("course_catalog.json")
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+
+                    //find the information we need and put in the table
+
+                    //makes the json structure (object of objects) into an array of objects
+                    const courses = Object.values(data);
+
+                    //loop through all courses and find the one with the requirement we need
+                    for (let i = 0; i < courses.length; i++) {
+                        let course = courses[i];
+                        if (course.requirements && ((course.requirements).includes("L"))) {
+                            let tr = document.createElement("tr");
+                            let td1 = document.createElement("td");
+                            td1.textContent = course.courseCode;
+                            tr.appendChild(td1);
+                            let td2 = document.createElement("td");
+                            td2.textContent = course.title;
+                            tr.appendChild(td2);
+
+                            
+                            let td6 = document.createElement("td");
+                            let reqs = "";
+                            for (let k = 0; k < (course.requirements).length; k++) {
+                                let abbrev = course.requirements[k];
+                                if ((course.requirements[k]).includes("S")) {
+                                    reqs = reqs + "Social Studies";
+                                }
+                                if ((course.requirements[k]).includes("M")) {
+                                    reqs = reqs + ", Multicultural Perspectives";
+                                }
+                                if ((course.requirements[k]).includes("H")) {
+                                    reqs = reqs + ", Humanities";
+                                }
+                                if ((course.requirements[k]).includes("MS")) {
+                                    reqs = reqs + ", Math Sciences";
+                                }
+                                if ((course.requirements[k]).includes("L")) {
+                                    reqs = reqs + ", Languages";
+                                }
+                            }
+                            td6.textContent = reqs;
+
+                            tr.appendChild(td6);
+                            table.appendChild(tr);
+                        }
+                    }
+                    //put the table in the html so we can see it
+                    container.appendChild(table);
+                })
+            }
         </script>
     </body>
 </html>
