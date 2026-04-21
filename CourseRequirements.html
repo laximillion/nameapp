@@ -62,7 +62,7 @@
                     createMS();
                 }
 
-                if (drop.value === "Social Sciences (Division III)") {
+                if (drop.value === "Social Studies (Division III)") {
                     createS();
                 }
 
@@ -109,20 +109,24 @@
                             let reqs = "";
                             for (let k = 0; k < (course.requirements).length; k++) {
                                 let abbrev = course.requirements[k];
-                                if ((course.requirements[k]).includes("S")) {
+                                let comma = ", ";
+                                if ((course.requirements[k]) === "S") {
                                     reqs = reqs + "Social Studies";
                                 }
-                                if ((course.requirements[k]).includes("M")) {
-                                    reqs = reqs + ", Multicultural Perspectives";
+                                if ((course.requirements[k]) === "M") {
+                                    reqs = reqs + "Multicultural Perspectives";
                                 }
-                                if ((course.requirements[k]).includes("H")) {
-                                    reqs = reqs + ", Humanities";
+                                if ((course.requirements[k]) === "H") {
+                                    reqs = reqs + "Humanities";
                                 }
-                                if ((course.requirements[k]).includes("MS")) {
-                                    reqs = reqs + ", Math Sciences";
+                                if ((course.requirements[k]) === "MS") {
+                                    reqs = reqs + "Math Sciences";
                                 }
-                                if ((course.requirements[k]).includes("L")) {
-                                    reqs = reqs + ", Languages";
+                                if ((course.requirements[k]) === "L") {
+                                    reqs = reqs + "Languages";
+                                }
+                                if ((k+1) < (course.requirements).length) {
+                                    reqs = reqs + comma;
                                 }
                             }
                             td6.textContent = reqs;
@@ -170,20 +174,24 @@
                             let reqs = "";
                             for (let k = 0; k < (course.requirements).length; k++) {
                                 let abbrev = course.requirements[k];
-                                if ((course.requirements[k]).includes("S")) {
+                                let comma = ", ";
+                                if ((course.requirements[k]) === "S") {
                                     reqs = reqs + "Social Studies";
                                 }
-                                if ((course.requirements[k]).includes("M")) {
-                                    reqs = reqs + ", Multicultural Perspectives";
+                                if ((course.requirements[k]) === "M") {
+                                    reqs = reqs + "Multicultural Perspectives";
                                 }
-                                if ((course.requirements[k]).includes("H")) {
-                                    reqs = reqs + ", Humanities";
+                                if ((course.requirements[k]) === "H") {
+                                    reqs = reqs + "Humanities";
                                 }
-                                if ((course.requirements[k]).includes("MS")) {
-                                    reqs = reqs + ", Math Sciences";
+                                if ((course.requirements[k]) === "MS") {
+                                    reqs = reqs + "Math Sciences";
                                 }
-                                if ((course.requirements[k]).includes("L")) {
-                                    reqs = reqs + ", Languages";
+                                if ((course.requirements[k]) === "L") {
+                                    reqs = reqs + "Languages";
+                                }
+                                if ((k+1) < (course.requirements).length) {
+                                    reqs = reqs + comma;
                                 }
                             }
                             td6.textContent = reqs;
@@ -231,20 +239,24 @@
                             let reqs = "";
                             for (let k = 0; k < (course.requirements).length; k++) {
                                 let abbrev = course.requirements[k];
-                                if ((course.requirements[k]).includes("S")) {
+                                let comma = ", ";
+                                if ((course.requirements[k]) === "S") {
                                     reqs = reqs + "Social Studies";
                                 }
-                                if ((course.requirements[k]).includes("M")) {
-                                    reqs = reqs + ", Multicultural Perspectives";
+                                if ((course.requirements[k]) === "M") {
+                                    reqs = reqs + "Multicultural Perspectives";
                                 }
-                                if ((course.requirements[k]).includes("H")) {
-                                    reqs = reqs + ", Humanities";
+                                if ((course.requirements[k]) === "H") {
+                                    reqs = reqs + "Humanities";
                                 }
-                                if ((course.requirements[k]).includes("MS")) {
-                                    reqs = reqs + ", Math Sciences";
+                                if ((course.requirements[k]) === "MS") {
+                                    reqs = reqs + "Math Sciences";
                                 }
-                                if ((course.requirements[k]).includes("L")) {
-                                    reqs = reqs + ", Languages";
+                                if ((course.requirements[k]) === "L") {
+                                    reqs = reqs + "Languages";
+                                }
+                                if ((k+1) < (course.requirements).length) {
+                                    reqs = reqs + comma;
                                 }
                             }
                             td6.textContent = reqs;
@@ -292,20 +304,24 @@
                                     let reqs = "";
                                     for (let k = 0; k < (course.requirements).length; k++) {
                                         let abbrev = course.requirements[k];
+                                        let comma = ", ";
                                         if ((course.requirements[k]) === "S") {
                                             reqs = reqs + "Social Studies";
                                         }
                                         if ((course.requirements[k]) === "M") {
-                                            reqs = reqs + ", Multicultural Perspectives";
+                                            reqs = reqs + "Multicultural Perspectives";
                                         }
                                         if ((course.requirements[k]) === "H") {
-                                            reqs = reqs + ", Humanities";
+                                            reqs = reqs + "Humanities";
                                         }
                                         if ((course.requirements[k]) === "MS") {
                                             reqs = reqs + "Math Sciences";
                                         }
                                         if ((course.requirements[k]) === "L") {
-                                            reqs = reqs + ", Languages";
+                                            reqs = reqs + "Languages";
+                                        }
+                                        if ((k+1) < (course.requirements).length) {
+                                            reqs = reqs + comma;
                                         }
                                     }
                                     td6.textContent = reqs;
@@ -353,20 +369,24 @@
                             let reqs = "";
                             for (let k = 0; k < (course.requirements).length; k++) {
                                 let abbrev = course.requirements[k];
-                                if ((course.requirements[k]).includes("S")) {
+                                let comma = ", ";
+                                if ((course.requirements[k]) === "S") {
                                     reqs = reqs + "Social Studies";
                                 }
-                                if ((course.requirements[k]).includes("M")) {
-                                    reqs = reqs + ", Multicultural Perspectives";
+                                if ((course.requirements[k]) === "M") {
+                                    reqs = reqs + "Multicultural Perspectives";
                                 }
-                                if ((course.requirements[k]).includes("H")) {
-                                    reqs = reqs + ", Humanities";
+                                if ((course.requirements[k]) === "H") {
+                                    reqs = reqs + "Humanities";
                                 }
-                                if ((course.requirements[k]).includes("MS")) {
-                                    reqs = reqs + ", Math Sciences";
+                                if ((course.requirements[k]) === "MS") {
+                                    reqs = reqs + "Math Sciences";
                                 }
-                                if ((course.requirements[k]).includes("L")) {
-                                    reqs = reqs + ", Languages";
+                                if ((course.requirements[k]) === "L") {
+                                    reqs = reqs + "Languages";
+                                }
+                                if ((k+1) < (course.requirements).length) {
+                                    reqs = reqs + comma;
                                 }
                             }
                             td6.textContent = reqs;
