@@ -4,10 +4,77 @@
     </head>
 
     <body>
-        <button onclick="createL()">Click me</button>
+        <select id="drop" onclick="select()">
+            <option>--Select a Requirement--</option>
+            <option>Humanities (Division I)</option>
+            <option>Math Sciences (Division II)</option>
+            <option>Social Studies (Division III)</option>
+            <option>Multicultural Perspectives</option>
+            <option>Language</option>
+        </select>
+        <input id="code" type="text" placeholder="Search Course Code...">
+        <input id="name" type="text" placeholder="Search Course Name...">
+        <input id="Requirement" type="text" placeholder="Search Co-Requirements...">
+        <button onclick="search()">Submit</button>
         <div id="Req"></div>
 
         <script>
+            function search() {
+                const searchCode = document.getElementById("code").value;
+                const searchName = document.getElementById("name").value;
+                const searchReq = document.getElementById("Requirement").value;
+
+                const container = document.getElementById("Req");
+                const table = container.querySelector('table');
+
+                for (let i = 0; i < (table.rows).length; i++) {
+                    let row = table.rows[i];
+                    let cellCode = table.rows[i].cells[0];
+                    let cellName = table.rows[i].cells[1];
+                    let cellReq = table.rows[i].cells[2];
+                    let textCode = cellCode.innerText;
+                    let textName = cellName.innerText;
+                    let textReq = cellReq.innerText;
+
+                    if (textCode.includes(searchCode) == false) {
+                        row.style.display = "none"
+                    }
+
+                    if (textName.includes(searchName) == false) {
+                        row.style.display = "none"
+                    }
+
+                    if (textReq.includes(searchReq) == false) {
+                        row.style.display = "none"
+                    }
+                }
+
+
+            }
+
+            function select() {
+                const dropdown = document.getElementById("drop");
+                if (drop.value === "Humanities (Division I)") {
+                    createH();
+                }
+
+                if (drop.value === "Math Sciences (Division II)") {
+                    createMS();
+                }
+
+                if (drop.value === "Social Sciences (Division III)") {
+                    createS();
+                }
+
+                if (drop.value === "Multicultural Perspectives") {
+                    createM();
+                }
+
+                if (drop.value === "Language") {
+                    createL();
+                }
+            }
+
             function createS() {
                 //create the place for the table to be stored
                 let container = document.getElementById("Req");
