@@ -81,15 +81,16 @@ PROGRAM_NAME_MAP = {
     "Japanese": "Japanese",
     "Jewish Studies": "JewishStudies",
     "Latin American Studies": "LatinAmericanStudies",
-    " Economics_minor": "",
+
+    "Economics_minor": "Econ",
     "Educational Studies_minor": "",
     "Entrepreneurship, Organizations, and Society _minor": "",
-    "Environmental studies_minor": "",
-    "Gender studies_minor": "",
+    "Environmental Studies_minor": "",
+    "Gender Studies_minor": "",
     "Geography_minor": "",
     "History_minor": "",
-    "Jewish studies_minor": "",
-    "Latin American studies_minor": "",
+    "Jewish Studies_minor": "",
+    "Latin American Studies_minor": "",
     "Psychology_minor": "",
     "Psychology and Education: Early Childhood and Elementary Teaching License_minor": "",
     "Psychology and Education: Teaching Licenses in Middle or Secondary Education, Foreign Language, Dance, Music, Theater, or Visual Art_minor": "",
@@ -109,7 +110,10 @@ def to_section_name(program_name, program_type):
     Converts dropdown text like 'Computer Science'
     into html section id like 'CompSci' or 'CompSci Minor'
     """
-    base = PROGRAM_NAME_MAP.get(program_name)
+    if program_type == "Major":
+        base = PROGRAM_NAME_MAP.get(program_name)
+    else:
+        base = PROGRAM_NAME_MAP.get(program_name+"_minor")
 
     print(program_name)
     if not base:
