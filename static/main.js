@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const selects = document.querySelectorAll(".optional-field select");
+    const allProgramSections = document.querySelectorAll(".container > div[id]");
 
     selects.forEach(select => {
         select.addEventListener('change', () => {
@@ -15,4 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    allProgramSections.forEach(section => {
+        if (section.id === "GeneralEducation") {
+            section.style.display = "block";
+        } 
+        else if (selectedNames.includes(section.id)) {
+            section.style.display = "block";
+        } else {
+            section.style.display = "none";
+        }
+    });
+    updateProgress();
 });

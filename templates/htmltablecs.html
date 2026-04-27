@@ -9,22 +9,64 @@
 </head>
 
 <body>
-  <div class="container">
-
-    <h2>Selected programs</h2>
-    <div class="progress-wrapper" style="position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 15px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;">
-      <div style="width: 80%; margin: 0 auto;">
-          <p style="margin: 5px 0; font-weight: bold;">Graduation Progress: <span id="progress-text">0%</span></p>
-          <div style="background: #eee; border-radius: 20px; height: 20px; width: 100%; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
-              <div id="myProgressBar" style="width: 0%; height: 100%; transition: width 0.4s ease;"></div>
-          </div>
-      </div>
+  <div class="progress-wrapper" style="position: sticky; top: 0; z-index: 1000; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 15px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 20px;">
+    <div style="width: 80%; margin: 0 auto;">
+        <p style="margin: 5px 0; font-weight: bold;">Graduation Progress: <span id="progress-text">0%</span></p>
+        <div style="background: #eee; border-radius: 20px; height: 20px; width: 100%; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
+            <div id="myProgressBar" style="width: 0%; height: 100%; transition: width 0.4s ease;"></div>
+        </div>
+    </div>
   </div>
+
+  <div class="container">
+    <div class="program-section" id="GeneralEducation" style="margin-top: 20px;">
+      <div style="display: flex; align-items: center; margin-bottom: 15px;">
+          <span style="font-size: 1.5rem; margin-right: 10px;"></span>
+          <h3 style="color: #034876; margin: 0; letter-spacing: 0.5px;">Core Curriculum Requirements</h3>
+      </div>
+      
+      <table>
+          <thead>
+              <tr>
+                  <th>Requirement Category</th>
+                  <th>Status</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr class="status-not-taken">
+                  <td>Humanities (Division I)</td>
+                  <td class="status-text">Not Taken</td>
+                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+              </tr>
+              <tr class="status-not-taken">
+                  <td>Math Sciences (Division II)</td>
+                  <td class="status-text">Not Taken</td>
+                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+              </tr>
+              <tr class="status-not-taken">
+                  <td>Social Studies (Division III)</td>
+                  <td class="status-text">Not Taken</td>
+                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+              </tr>
+              <tr class="status-not-taken">
+                  <td>Multicultural Perspectives</td>
+                  <td class="status-text">Not Taken</td>
+                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+              </tr>
+              <tr class="status-not-taken">
+                  <td>Foreign Language</td>
+                  <td class="status-text">Not Taken</td>
+                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+              </tr>
+          </tbody>
+      </table>
+    </div>
   
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <ul>
       {% for item in selected_items %}
-      <li>{{ item.name }} {{ item.type }}</li>
+      <h3 style="color: #034876; margin: 0; letter-spacing: 0.5px;">{{ item.name }} {{ item.type }}</h3>
       {% endfor %}
     </ul>
 
@@ -4249,8 +4291,8 @@
         const allProgramSections = document.querySelectorAll(".container > div[id]");
     
         allProgramSections.forEach(section => {
-          // 只有在选中名单里的 ID 才会显示
-          if (selectedNames.includes(section.id)) {
+          // only show selected sections
+          if (selectedNames.includes(section.id) || section.id === "GeneralEducation") {
             section.style.display = "block";
           } else {
             section.style.display = "none";
@@ -4283,10 +4325,10 @@
             bar.style.width = percentage + "%";
             // bar.textContent = percentage + "%"; // progress bar in %
         }
-        
+        /*
         if (text) {
             text.textContent = percentage + "%";
-        }
+        }*/
     
         // 100% achieved
         if (percentage === 100 && !window.hasConfettiFired) {
