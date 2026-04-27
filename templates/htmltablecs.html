@@ -19,58 +19,61 @@
   </div>
 
   <div class="container">
-    <div class="program-section" id="GeneralEducation" style="margin-top: 20px;">
-      <div style="display: flex; align-items: center; margin-bottom: 15px;">
-          <span style="font-size: 1.5rem; margin-right: 10px;"></span>
-          <h3 style="color: #034876; margin: 0; letter-spacing: 0.5px;">Core Curriculum Requirements</h3>
-      </div>
-      
-      <table>
-          <thead>
+    <div class="dashboard-grid">
+
+      <div class="grid-left">
+        <div class="program-section" id="GeneralEducation" style="margin-top: 20px;">
+          <div style="display: flex; align-items: center; margin-bottom: 15px;">
+            <span style="font-size: 1.5rem; margin-right: 10px;"></span>
+            <h3 style="color: #034876; margin: 0; letter-spacing: 0.5px;">Core Curriculum Requirements</h3>
+          </div>
+          <table>
+            <thead>
               <tr>
-                  <th>Requirement Category</th>
-                  <th>Status</th>
-                  <th>Action</th>
+                <th>Requirement Category</th>
+                <th>Status</th>
+                <th>Action</th>
               </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
               <tr class="status-not-taken">
-                  <td>Humanities (Division I)</td>
-                  <td class="status-text">Not Taken</td>
-                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
-              </tr>
-              <tr class="status-not-taken">
-                  <td>Math Sciences (Division II)</td>
-                  <td class="status-text">Not Taken</td>
-                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+                <td>Humanities (Division I)</td>
+                <td class="status-text">Not Taken</td>
+                <td><button onclick="switchStatus(this)">Not Taken</button></td>
               </tr>
               <tr class="status-not-taken">
-                  <td>Social Studies (Division III)</td>
-                  <td class="status-text">Not Taken</td>
-                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+                <td>Math Sciences (Division II)</td>
+                <td class="status-text">Not Taken</td>
+                <td><button onclick="switchStatus(this)">Not Taken</button></td>
               </tr>
               <tr class="status-not-taken">
-                  <td>Multicultural Perspectives</td>
-                  <td class="status-text">Not Taken</td>
-                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+                <td>Social Studies (Division III)</td>
+                <td class="status-text">Not Taken</td>
+                <td><button onclick="switchStatus(this)">Not Taken</button></td>
               </tr>
               <tr class="status-not-taken">
-                  <td>Foreign Language</td>
-                  <td class="status-text">Not Taken</td>
-                  <td><button onclick="switchStatus(this)">Not Taken</button></td>
+                <td>Multicultural Perspectives</td>
+                <td class="status-text">Not Taken</td>
+                <td><button onclick="switchStatus(this)">Not Taken</button></td>
+              </tr>
+              <tr class="status-not-taken">
+                <td>Foreign Language</td>
+                <td class="status-text">Not Taken</td>
+                <td><button onclick="switchStatus(this)">Not Taken</button></td>
               </tr>
           </tbody>
-      </table>
-    </div>
+          </table>
+        </div>
+      </div>
+
+      <div class="grid-right">
+    
+        {% for item in selected_items %}
+                <h3 style="color: #034876; margin-bottom: 10px;">{{ item.name }} {{ item.type }}</h3>
+        {% endfor %}
   
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-    <ul>
-      {% for item in selected_items %}
-      <h3 style="color: #034876; margin: 0; letter-spacing: 0.5px;">{{ item.name }} {{ item.type }}</h3>
-      {% endfor %}
-    </ul>
-
-    <div id="Africana Major">
+    <div id="Africana Major" class="program-section">
       <table style="width:60%">
         <tr>
           <th colspan="3">Africana Studies Major</th>
@@ -4283,16 +4286,26 @@
         </tr>
       </table>
     </div>
+  </div>
+</div> </div>
 
     <script>
       const selectedNames = {{ selected_names | tojson | safe }};
     
       document.addEventListener("DOMContentLoaded", function () {
-        const allProgramSections = document.querySelectorAll(".container > div[id]");
+        const rightSizeDivs = document.querySelectorAll(".grid-right div[id]")
+        rightSizeDivs.forEach(div => {
+          if (div.id !== "GeneralEducation") {
+            div.classList.add("program-section");
+          }
+        })
+
+        const allProgramSections = document.querySelectorAll(".program-section[id]");
     
         allProgramSections.forEach(section => {
+          const isSelected = selectedNames.some(name => name.trim() === section.id.trim());
           // only show selected sections
-          if (selectedNames.includes(section.id) || section.id === "GeneralEducation") {
+          if (isSelected || section.id === "GeneralEducation") {
             section.style.display = "block";
           } else {
             section.style.display = "none";
@@ -4303,7 +4316,7 @@
     
       function updateProgress() {
         //  get all the sections visible to users
-        const visibleSections = Array.from(document.querySelectorAll(".container > div[id]"))
+        const visibleSections = Array.from(document.querySelectorAll(".program-section"))
                                      .filter(div => div.style.display !== "none");
         
         // get all the buttons visible to users
@@ -4315,6 +4328,7 @@
     
         if (visibleButtons.length === 0) return;
     
+        //calculaye proportion
         const takenCount = visibleButtons.filter(btn => btn.textContent.trim() === "Taken").length;
         const percentage = Math.round((takenCount / visibleButtons.length) * 100);
     
@@ -4325,10 +4339,10 @@
             bar.style.width = percentage + "%";
             // bar.textContent = percentage + "%"; // progress bar in %
         }
-        /*
+        
         if (text) {
             text.textContent = percentage + "%";
-        }*/
+        }
     
         // 100% achieved
         if (percentage === 100 && !window.hasConfettiFired) {

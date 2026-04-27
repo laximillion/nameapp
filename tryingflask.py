@@ -137,6 +137,7 @@ def requirements():
     major2 = request.form.get('major2', '').strip()
     minor = request.form.get('minor', '').strip()
 
+
     major_count = sum(bool(x) for x in [major1, major2])
     minor_count = 1 if minor else 0
 
@@ -185,6 +186,7 @@ def requirements():
 
     return render_template(
         'htmltablecs.html',
+
         selected_items=selected_items,
         selected_names=selected_names
     )
