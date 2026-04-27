@@ -12,6 +12,16 @@
   <div class="container">
 
     <h2>Selected programs</h2>
+    <div class="progress-wrapper" style="position: sticky; top: 0; z-index: 1000; background: white; padding: 10px 0; border-bottom: 2px solid #034876;">
+      <div style="width: 80%; margin: 0 auto;">
+          <p style="margin: 5px 0; font-weight: bold;">Graduation Progress: <span id="progress-text">0%</span></p>
+          <div style="background: #eee; border-radius: 20px; height: 20px; width: 100%; overflow: hidden; box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);">
+              <div id="myProgressBar" style="width: 0%; height: 100%; background: linear-gradient(90deg, #034876, #00b4db); transition: width 0.4s ease;"></div>
+          </div>
+      </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <ul>
       {% for item in selected_items %}
       <li>{{ item.name }} {{ item.type }}</li>
@@ -4234,23 +4244,66 @@
 
     <script>
       const selectedNames = {{ selected_names | tojson | safe }};
-      console.log(selectedNames);
-
+    
       document.addEventListener("DOMContentLoaded", function () {
         const allProgramSections = document.querySelectorAll(".container > div[id]");
-
+    
         allProgramSections.forEach(section => {
+          // 只有在选中名单里的 ID 才会显示
           if (selectedNames.includes(section.id)) {
             section.style.display = "block";
           } else {
             section.style.display = "none";
           }
         });
+        // 初始化计算一次
+        updateProgress();
       });
-
+    
+      function updateProgress() {
+        //  get all the sections visible to users
+        const visibleSections = Array.from(document.querySelectorAll(".container > div[id]"))
+                                     .filter(div => div.style.display !== "none");
+        
+        // get all the buttons visible to users
+        let visibleButtons = [];
+        visibleSections.forEach(section => {
+            const btns = section.querySelectorAll("button");
+            visibleButtons.push(...Array.from(btns));
+        });
+    
+        if (visibleButtons.length === 0) return;
+    
+        const takenCount = visibleButtons.filter(btn => btn.textContent.trim() === "Taken").length;
+        const percentage = Math.round((takenCount / visibleButtons.length) * 100);
+    
+        const bar = document.getElementById('myProgressBar');
+        const text = document.getElementById('progress-text');
+    
+        if (bar) {
+            bar.style.width = percentage + "%";
+            bar.textContent = percentage + "%"; // progress bar in %
+        }
+        if (text) {
+            text.textContent = percentage + "%";
+        }
+    
+        // 100% achieved
+        if (percentage === 100 && !window.hasConfettiFired) {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+            window.hasConfettiFired = true;
+        } else if (percentage < 100) {
+            window.hasConfettiFired = false;
+        }
+      }
+    
       function switchStatus(button) {
         const row = button.closest("tr");
-
+    
         if (button.textContent.trim() === "Not Taken") {
           button.textContent = "Taken";
           row.style.backgroundColor = "#DAFFD5";
@@ -4258,6 +4311,8 @@
           button.textContent = "Not Taken";
           row.style.backgroundColor = "#FFD1DC";
         }
+        // update everytime button clicked
+        updateProgress();
       }
     </script>
   </div>
