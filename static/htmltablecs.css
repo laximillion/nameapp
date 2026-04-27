@@ -1,25 +1,94 @@
 table,
 th,
 td {
-    border: 1px solid black;
+    border-bottom: 1px solid #f1f5f9;
     padding: 10px;
+    font-size: 0.95rem;
+}
+
+table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    border: none !important;
+}
+
+th {
+    background-color: #4b96c8e1 !important;
+    color: #f8fafc !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    padding: 18px !important;
+    border: none !important;
 }
 
 
 tr:nth-child(even) {
     background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
+    
 }
 
 td {
-    vertical-align: middle;
+    border-bottom: 1px solid #eee !important; /* 改用极淡的灰线隔开行 */
+    border-right: none !important;
+    border-left: none !important;
+    border-top: none !important;
+    padding: 12px 15px !important;
+    color: #444;
 }
 
-.taken {
-    background-color: #DAFFD5;
-    /* light green */
+body {
+    background-color: #f1f5f9; 
+    color: #1e293b;
+    font-family: 'Inter', -apple-system, sans-serif;
 }
 
-.not-taken {
-    background-color: #FFD1DC;
-    /* light red */
+.progress-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 20px 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+#myProgressBar {
+    background: linear-gradient(90deg, #0e87d7e1, #5b91e8a3, #c3d4eff3);
+    border-radius: 20px;
+    transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+button {
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-1px);
+}
+
+.status-taken {
+    background-color: #e0f2fe !important; 
+    color: #034876 !important;          
+    font-weight: 400;
+}
+
+.status-not-taken {
+    background-color: #ffffff !important;
+    color: #64748b !important;
 }
