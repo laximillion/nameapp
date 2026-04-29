@@ -83,19 +83,19 @@ PROGRAM_NAME_MAP = {
     "Latin American Studies": "LatinAmericanStudies",
 
     "Economics_minor": "Econ",
-    "Educational Studies_minor": "",
-    "Entrepreneurship, Organizations, and Society _minor": "",
-    "Environmental Studies_minor": "",
-    "Gender Studies_minor": "",
-    "Geography_minor": "",
-    "History_minor": "",
-    "Jewish Studies_minor": "",
-    "Latin American Studies_minor": "",
-    "Psychology_minor": "",
-    "Psychology and Education: Early Childhood and Elementary Teaching License_minor": "",
-    "Psychology and Education: Teaching Licenses in Middle or Secondary Education, Foreign Language, Dance, Music, Theater, or Visual Art_minor": "",
-    "Romance Languages and Cultures _minor": "",
-    "Statistics_minor": "",
+    "Educational Studies_minor": "Edu",
+    "Entrepreneurship, Organizations, and Society _minor": "EOS",
+    "Environmental Studies_minor": "Envir",
+    "Gender Studies_minor": "Gender",
+    "Geography_minor": "Geo",
+    "History_minor": "Hist",
+    "Jewish Studies_minor": "Jewish",
+    "Latin American Studies_minor": "LatinAmerican",
+    "Psychology_minor": "Psych",
+    "Psychology and Education: Early Childhood and Elementary Teaching License_minor": "PsychEdEarly",
+    "Psychology and Education: Teaching Licenses in Middle or Secondary Education, Foreign Language, Dance, Music, Theater, or Visual Art_minor": "PsychEdOther",
+    "Romance Languages and Cultures _minor": "Romance",
+    "Statistics_minor": "Stat",
 
     # special CRPE names
     "Critical Race and Political Economy (CRPE): CRPE Pathway": "CRPEOne",
@@ -136,7 +136,6 @@ def requirements():
     major1 = request.form.get('major1', '').strip()
     major2 = request.form.get('major2', '').strip()
     minor = request.form.get('minor', '').strip()
-
 
     major_count = sum(bool(x) for x in [major1, major2])
     minor_count = 1 if minor else 0
