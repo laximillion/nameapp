@@ -88,6 +88,7 @@ PROGRAM_NAME_MAP = {
     "Environmental Studies_minor": "Envir",
     "Gender Studies_minor": "Gender",
     "Geography_minor": "Geo",
+    "Dance_minor": "Dance",
     "History_minor": "Hist",
     "Jewish Studies_minor": "Jewish",
     "Latin American Studies_minor": "LatinAmerican",
