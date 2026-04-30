@@ -223,9 +223,10 @@ def requirements():
         if section:
             selected_names.append(section)
 
+    app.logger.info(selected_items)
+    app.logger.info(selected_names)
     return render_template(
         'htmltablecs.html',
-
         selected_items=selected_items,
         selected_names=selected_names
     )
