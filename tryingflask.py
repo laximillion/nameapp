@@ -82,6 +82,16 @@ PROGRAM_NAME_MAP = {
     "Jewish Studies": "JewishStudies",
     "Latin American Studies": "LatinAmericanStudies",
 
+    "Arabic_minor": "Arabic",
+    "Asian Studies_minor": "Asian",
+    "Chinese_minor": "Chinese",
+    "Educational Studies_minor": "EducationalStudies",
+    "Entrepreneurship, Organizations, and Society_minor": "EntrepreneurshipOrganizationsSociety",
+    "Film Media Theater (FMT)_minor": "FMT",
+    "Japanese_minor": "Japanese",
+    "Jewish Studies_minor": "JewishStudies",
+    "Latin American Studies_minor": "LatinAmericanStudies",
+
     "Economics_minor": "Econ",
     "Educational Studies_minor": "Edu",
     "Entrepreneurship, Organizations, and Society _minor": "EOS",
